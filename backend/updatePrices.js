@@ -36,7 +36,7 @@ export function formatCopNoDecimals(amount) {
 /**
  * Sleeps for an exact number of milliseconds
  */
-function sleep(ms) {
+export function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
@@ -368,7 +368,7 @@ async function fetchCatalogProductLivePricing(productId, searchResultsByProductI
 /**
  * Launches a visible persistent browser context using locally installed Chrome or Edge
  */
-async function launchMeliPersistentContext() {
+export async function launchMeliPersistentContext() {
   const launchOptions = {
     headless: false,
     locale: 'es-CO',
@@ -396,7 +396,7 @@ async function launchMeliPersistentContext() {
 /**
  * Checks whether the current browser URL or page content is Mercado Libre verification/login
  */
-function isVerificationOrLoginUrl(urlString) {
+export function isVerificationOrLoginUrl(urlString) {
   return (
     urlString.includes('/gz/account-verification') ||
     urlString.includes('/login') ||
@@ -408,7 +408,7 @@ function isVerificationOrLoginUrl(urlString) {
 /**
  * Waits until either .ui-pdp-price or a Product JSON-LD script is attached in the DOM
  */
-async function waitForProductPriceSelector(page, timeout = 15000) {
+export async function waitForProductPriceSelector(page, timeout = 15000) {
   await page.waitForFunction(
     () => {
       if (document.querySelector('.ui-pdp-price')) return true;

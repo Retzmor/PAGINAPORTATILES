@@ -13,5 +13,6 @@ dist-ssr
 *.sw?
 backend/.meli-browser-profile/
 urls-activas.txt
+urls-nuevas.txt
 
 
