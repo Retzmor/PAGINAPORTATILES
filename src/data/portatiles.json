@@ -1,0 +1,1226 @@
+[
+  {
+    "id": "MCO43645309",
+    "nombre": "Portátil Lenovo Thinkbook 14 G6 Ryzen 5 7430U 32GB 512GB IPS Color Gris",
+    "precioCOP": 3748514,
+    "enlace": "https://www.mercadolibre.com.co/portatil-lenovo-thinkbook-14-g6-ryzen-5-7430u-32gb-512gb-ips-color-gris/p/MCO43645309",
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_767568-MLA80922288661_112024-O.jpg",
+    "title": "Portátil Lenovo Thinkbook 14 G6 Ryzen 5 7430U 32GB 512GB IPS Color Gris",
+    "price": 3748514,
+    "url": "https://www.mercadolibre.com.co/portatil-lenovo-thinkbook-14-g6-ryzen-5-7430u-32gb-512gb-ips-color-gris/p/MCO43645309",
+    "affiliateUrl": "https://meli.la/1kpm81d",
+    "imageUrl": "https://http2.mlstatic.com/D_NQ_NP_767568-MLA80922288661_112024-O.jpg",
+    "brand": "Lenovo",
+    "processor": {
+      "raw": "AMD Ryzen 5 7430u",
+      "family": "Ryzen 5",
+      "tierScore": 3,
+      "humanDescription": "Excelente rendimiento para estudiar, programar, trabajar y videollamadas fluidas."
+    },
+    "ram": {
+      "sizeGB": 32,
+      "label": "32 GB RAM",
+      "explanation": "Profesional: diseñada para edición 4K, diseño 3D y juegos de última generación."
+    },
+    "storage": {
+      "sizeGB": 512,
+      "type": "SSD",
+      "label": "512 GB SSD",
+      "explanation": "Disco SSD ultraveloz: espacio amplio para miles de fotos, videos y arranque en 8 segundos."
+    },
+    "tier": {
+      "id": "pro",
+      "label": "Alto Rendimiento / Gaming / Diseño",
+      "icon": "Gamepad2",
+      "shortDescription": "Ideal para personas creativas, diseñadores gráficos, ingenieros o entusiastas de los videojuegos.",
+      "badgeBg": "bg-purple-100 text-purple-800 border-purple-200",
+      "badgeText": "Alto Rendimiento / Gaming",
+      "recommendedFor": [
+        "Diseño gráfico (Photoshop, Illustrator, Premiere)",
+        "Edición de video 4K y producción musical",
+        "Videojuegos modernos y modelado en 3D",
+        "Programación avanzada y máquinas virtuales"
+      ],
+      "idealUser": "Creadores de contenido, gamers, ingenieros y usuarios exigentes que no quieren limitaciones."
+    },
+    "condition": "Nuevo",
+    "freeShipping": true,
+    "installments": "Hasta 12 cuotas sin interés con bancos aliados",
+    "seller": "LENOVO TIENDA OFICIAL",
+    "screenSize": "14\"",
+    "updatedAt": "2026-11-15T06:01:58.205Z",
+    "precioCOPFormateado": "$ 3.748.514",
+    "priceSyncedAt": "2026-11-15T06:01:58.205Z"
+  },
+  {
+    "id": "MCO41209434",
+    "nombre": "Asus X1504ZA-NJ Portátil Vivobook Core i3 1215U RAM 12GB SSD 512GB FHD Color Gris",
+    "precioCOP": 1649000,
+    "enlace": "https://www.mercadolibre.com.co/asus-x1504za-nj-portatil-vivobook-core-i3-1215u-ram-12gb-ssd-512gb-fhd-color-gris/p/MCO41209434",
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_864688-MLA80223025147_102024-O.jpg",
+    "title": "Asus X1504ZA-NJ Portátil Vivobook Core i3 1215U RAM 12GB SSD 512GB FHD Color Gris",
+    "price": 1649000,
+    "originalPrice": 1949000,
+    "discountPercentage": 15,
+    "url": "https://www.mercadolibre.com.co/asus-x1504za-nj-portatil-vivobook-core-i3-1215u-ram-12gb-ssd-512gb-fhd-color-gris/p/MCO41209434",
+    "affiliateUrl": "https://www.mercadolibre.com.co/asus-x1504za-nj-portatil-vivobook-core-i3-1215u-ram-12gb-ssd-512gb-fhd-color-gris/p/MCO41209434",
+    "imageUrl": "https://http2.mlstatic.com/D_NQ_NP_864688-MLA80223025147_102024-O.jpg",
+    "brand": "Asus",
+    "processor": {
+      "raw": "Intel Core i3-1215U",
+      "family": "Core i3",
+      "tierScore": 2,
+      "humanDescription": "Muy bueno para estudiar, navegar con muchas páginas, ver series y hacer trabajos de oficina."
+    },
+    "ram": {
+      "sizeGB": 12,
+      "label": "12 GB RAM",
+      "explanation": "Avanzada: permite tener decenas de pestañas, Canva y programas pesados sin frenarse."
+    },
+    "storage": {
+      "sizeGB": 512,
+      "type": "SSD",
+      "label": "512 GB SSD",
+      "explanation": "Disco SSD ultraveloz: espacio amplio para miles de fotos, videos y arranque en 8 segundos."
+    },
+    "tier": {
+      "id": "work",
+      "label": "Multitarea y Trabajo Fluido",
+      "icon": "Briefcase",
+      "shortDescription": "Excelente para profesionales, teletrabajo, administración y personas que necesitan rapidez en el día a día.",
+      "badgeBg": "bg-emerald-100 text-emerald-800 border-emerald-200",
+      "badgeText": "Multitarea y Trabajo Fluido",
+      "recommendedFor": [
+        "Trabajo remoto y llamadas de Meet / Teams sin cortes",
+        "Tener 30 pestañas abiertas mientras escuchas música",
+        "Facturación, software contable, bases de datos y CRM",
+        "Creación de contenido para redes en Canva"
+      ],
+      "idealUser": "Profesionales independientes, comerciantes, oficinistas y estudiantes que buscan rapidez y longevidad."
+    },
+    "condition": "Nuevo",
+    "freeShipping": true,
+    "installments": "Hasta 12 cuotas sin interés con bancos aliados",
+    "seller": "ASUS TIENDA OFICIAL",
+    "screenSize": "15.6\"",
+    "updatedAt": "2026-11-15T04:32:57.328Z"
+  },
+  {
+    "id": "MCO1949411394",
+    "nombre": "Portátil Lenovo Doceava Intel Core i3 1215U RAM 16GB SSD 256GB FHD",
+    "precioCOP": 2042714,
+    "enlace": "https://articulo.mercadolibre.com.co/MCO-1949411394-portatil-lenovo-doceava-intel-i3-1215u-ram-16g-ssd-256g-fhd-_JM",
+    "imagen": "https://http2.mlstatic.com/D_791703-MCO72063493624_102023-O.jpg",
+    "title": "Portátil Lenovo Doceava Intel Core i3 1215U RAM 16GB SSD 256GB FHD",
+    "price": 2042714,
+    "url": "https://articulo.mercadolibre.com.co/MCO-1949411394-portatil-lenovo-doceava-intel-i3-1215u-ram-16g-ssd-256g-fhd-_JM",
+    "imageUrl": "https://http2.mlstatic.com/D_791703-MCO72063493624_102023-O.jpg",
+    "brand": "Lenovo",
+    "processor": {
+      "raw": "Intel Core i3-1215U",
+      "family": "Core i3",
+      "tierScore": 2,
+      "humanDescription": "Muy bueno para estudiar, navegar con muchas páginas, ver series y hacer trabajos de oficina."
+    },
+    "ram": {
+      "sizeGB": 16,
+      "label": "16 GB RAM",
+      "explanation": "Avanzada: permite tener decenas de pestañas, Canva y programas pesados sin frenarse."
+    },
+    "storage": {
+      "sizeGB": 256,
+      "type": "SSD",
+      "label": "256 GB SSD",
+      "explanation": "Disco de estado sólido: el portátil enciende en segundos y abre tus aplicaciones al instante."
+    },
+    "tier": {
+      "id": "pro",
+      "label": "Alto Rendimiento / Gaming / Diseño",
+      "icon": "Gamepad2",
+      "shortDescription": "Ideal para personas creativas, diseñadores gráficos, ingenieros o entusiastas de los videojuegos.",
+      "badgeBg": "bg-purple-100 text-purple-800 border-purple-200",
+      "badgeText": "Alto Rendimiento / Gaming",
+      "recommendedFor": [
+        "Diseño gráfico (Photoshop, Illustrator, Premiere)",
+        "Edición de video 4K y producción musical",
+        "Videojuegos modernos y modelado en 3D",
+        "Programación avanzada y máquinas virtuales"
+      ],
+      "idealUser": "Creadores de contenido, gamers, ingenieros y usuarios exigentes que no quieren limitaciones."
+    },
+    "condition": "Nuevo",
+    "freeShipping": true,
+    "installments": "Hasta 12 cuotas sin interés con bancos aliados",
+    "seller": "TECNOPORTATILES COLOMBIA",
+    "screenSize": "15.6\"",
+    "updatedAt": "2026-11-15T06:01:58.205Z",
+    "precioCOPFormateado": "$ 2.042.714",
+    "priceSyncedAt": "2026-11-15T06:01:58.205Z"
+  },
+  {
+    "id": "MCO27805439",
+    "nombre": "Portátil Lenovo V14 G3 IAP Core i3 1215U 8GB 256GB 14 FHD Color Gris",
+    "precioCOP": 2133999,
+    "enlace": "https://www.mercadolibre.com.co/portatil-lenovo-v14-g3-iap-core-i3-1215u-8gb-256gb-14-fhd-color-gris/p/MCO27805439",
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_856859-MLU72363918499_102023-O.jpg",
+    "title": "Portátil Lenovo V14 G3 IAP Core i3 1215U 8GB 256GB 14 FHD Color Gris",
+    "price": 2133999,
+    "originalPrice": 2199999,
+    "discountPercentage": 3,
+    "url": "https://www.mercadolibre.com.co/portatil-lenovo-v14-g3-iap-core-i3-1215u-8gb-256gb-14-fhd-color-gris/p/MCO27805439",
+    "affiliateUrl": "https://meli.la/1C2Q9hG",
+    "imageUrl": "https://http2.mlstatic.com/D_NQ_NP_856859-MLU72363918499_102023-O.jpg",
+    "brand": "Lenovo",
+    "processor": {
+      "raw": "Intel Core i3-1215U",
+      "family": "Core i3",
+      "tierScore": 2,
+      "humanDescription": "Muy bueno para estudiar, navegar con muchas páginas, ver series y hacer trabajos de oficina."
+    },
+    "ram": {
+      "sizeGB": 8,
+      "label": "8 GB RAM",
+      "explanation": "Estándar: excelente para trabajar en Word, Excel, Zoom y navegar con fluidez."
+    },
+    "storage": {
+      "sizeGB": 256,
+      "type": "SSD",
+      "label": "256 GB SSD",
+      "explanation": "Disco de estado sólido: el portátil enciende en segundos y abre tus aplicaciones al instante."
+    },
+    "tier": {
+      "id": "basic",
+      "label": "Estudio y Oficina Básica",
+      "icon": "GraduationCap",
+      "shortDescription": "Perfecto para estudiantes, navegación web, ver películas y elaborar tareas en Word o Excel.",
+      "badgeBg": "bg-blue-100 text-blue-800 border-blue-200",
+      "badgeText": "Estudio y Oficina Básica",
+      "recommendedFor": [
+        "Clases virtuales, tareas escolares y Zoom",
+        "Navegación web, YouTube y Netflix",
+        "Word, Excel, PowerPoint y lectura de PDFs",
+        "Administración básica del hogar y redes sociales"
+      ],
+      "idealUser": "Estudiantes de colegio o universidad básica, adultos mayores y tareas sencillas del hogar."
+    },
+    "condition": "Nuevo",
+    "freeShipping": true,
+    "installments": "Hasta 12 cuotas sin interés con bancos aliados",
+    "seller": "LENOVO TIENDA OFICIAL",
+    "screenSize": "14\"",
+    "updatedAt": "2026-11-15T06:01:58.205Z",
+    "precioCOPFormateado": "$ 2.133.999",
+    "priceSyncedAt": "2026-11-15T06:01:58.205Z"
+  },
+  {
+    "id": "MCO32161065",
+    "nombre": "Portátil Asus X1605ZA-MB644 Intel Core i5-12500H 16GB RAM Disco Sólido 512GB SSD 16 FHD",
+    "precioCOP": 2500000,
+    "enlace": "https://www.mercadolibre.com.co/portatil-asus-x1605za-mb644-intel-corei5-12500h-16gb-ram-disco-solido-512ssd-16-fhd-endless/p/MCO32161065",
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_822592-MLU74290609668_022024-O.jpg",
+    "title": "Portátil Asus X1605ZA-MB644 Intel Core i5-12500H 16GB RAM Disco Sólido 512GB SSD 16 FHD",
+    "price": 2500000,
+    "url": "https://www.mercadolibre.com.co/portatil-asus-x1605za-mb644-intel-corei5-12500h-16gb-ram-disco-solido-512ssd-16-fhd-endless/p/MCO32161065",
+    "imageUrl": "https://http2.mlstatic.com/D_NQ_NP_822592-MLU74290609668_022024-O.jpg",
+    "brand": "Asus",
+    "processor": {
+      "raw": "Intel Core i5-12500H",
+      "family": "Core i5",
+      "tierScore": 3,
+      "humanDescription": "El equilibrio perfecto entre rapidez y precio. Excelente para trabajar sin pausas."
+    },
+    "ram": {
+      "sizeGB": 16,
+      "label": "16 GB RAM",
+      "explanation": "Avanzada: permite tener decenas de pestañas, Canva y programas pesados sin frenarse."
+    },
+    "storage": {
+      "sizeGB": 512,
+      "type": "SSD",
+      "label": "512 GB SSD",
+      "explanation": "Disco SSD ultraveloz: espacio amplio para miles de fotos, videos y arranque en 8 segundos."
+    },
+    "tier": {
+      "id": "pro",
+      "label": "Alto Rendimiento / Gaming / Diseño",
+      "icon": "Gamepad2",
+      "shortDescription": "Ideal para personas creativas, diseñadores gráficos, ingenieros o entusiastas de los videojuegos.",
+      "badgeBg": "bg-purple-100 text-purple-800 border-purple-200",
+      "badgeText": "Alto Rendimiento / Gaming",
+      "recommendedFor": [
+        "Diseño gráfico (Photoshop, Illustrator, Premiere)",
+        "Edición de video 4K y producción musical",
+        "Videojuegos modernos y modelado en 3D",
+        "Programación avanzada y máquinas virtuales"
+      ],
+      "idealUser": "Creadores de contenido, gamers, ingenieros y usuarios exigentes que no quieren limitaciones."
+    },
+    "condition": "Nuevo",
+    "freeShipping": true,
+    "installments": "Hasta 12 cuotas sin interés con bancos aliados",
+    "seller": "ASUS STORE COLOMBIA",
+    "screenSize": "16\"",
+    "updatedAt": "2026-11-15T06:01:58.205Z",
+    "precioCOPFormateado": "$ 2.500.000",
+    "priceSyncedAt": "2026-11-15T06:01:58.205Z"
+  },
+  {
+    "id": "MCO28769789",
+    "nombre": "Portátil Gamer Lenovo LOQ 15.6 AMD Ryzen 7 7840HS 8GB RAM 512GB SSD Nvidia RTX 4050 6GB",
+    "precioCOP": 3899000,
+    "enlace": "https://www.mercadolibre.com.co/portatil-gamer-lenovo-loq-loq-gamer-gris-oscura-156-amd-ryzen-7-7840hs-8gb-de-ram-512gb-ssd-nvidia-geforce-rtx-4050-6gb-gddr6-1920x1080px-windows-11-home/p/MCO28769789",
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_883588-MLU73372159849_122023-O.jpg",
+    "title": "Portátil Gamer Lenovo LOQ 15.6 AMD Ryzen 7 7840HS 8GB RAM 512GB SSD Nvidia RTX 4050 6GB",
+    "price": 3899000,
+    "originalPrice": 4499000,
+    "discountPercentage": 13,
+    "url": "https://www.mercadolibre.com.co/portatil-gamer-lenovo-loq-loq-gamer-gris-oscura-156-amd-ryzen-7-7840hs-8gb-de-ram-512gb-ssd-nvidia-geforce-rtx-4050-6gb-gddr6-1920x1080px-windows-11-home/p/MCO28769789",
+    "affiliateUrl": "https://www.mercadolibre.com.co/portatil-gamer-lenovo-loq-loq-gamer-gris-oscura-156-amd-ryzen-7-7840hs-8gb-de-ram-512gb-ssd-nvidia-geforce-rtx-4050-6gb-gddr6-1920x1080px-windows-11-home/p/MCO28769789",
+    "imageUrl": "https://http2.mlstatic.com/D_NQ_NP_883588-MLU73372159849_122023-O.jpg",
+    "brand": "Lenovo",
+    "processor": {
+      "raw": "AMD Ryzen 7 7840hs",
+      "family": "Ryzen 7",
+      "tierScore": 4,
+      "humanDescription": "Muy veloz y potente con múltiples núcleos, perfecto para creadores y multitarea pesada."
+    },
+    "ram": {
+      "sizeGB": 8,
+      "label": "8 GB RAM",
+      "explanation": "Estándar: excelente para trabajar en Word, Excel, Zoom y navegar con fluidez."
+    },
+    "storage": {
+      "sizeGB": 512,
+      "type": "SSD",
+      "label": "512 GB SSD",
+      "explanation": "Disco SSD ultraveloz: espacio amplio para miles de fotos, videos y arranque en 8 segundos."
+    },
+    "tier": {
+      "id": "pro",
+      "label": "Alto Rendimiento / Gaming / Diseño",
+      "icon": "Gamepad2",
+      "shortDescription": "Ideal para personas creativas, diseñadores gráficos, ingenieros o entusiastas de los videojuegos.",
+      "badgeBg": "bg-purple-100 text-purple-800 border-purple-200",
+      "badgeText": "Alto Rendimiento / Gaming",
+      "recommendedFor": [
+        "Diseño gráfico (Photoshop, Illustrator, Premiere)",
+        "Edición de video 4K y producción musical",
+        "Videojuegos modernos y modelado en 3D",
+        "Programación avanzada y máquinas virtuales"
+      ],
+      "idealUser": "Creadores de contenido, gamers, ingenieros y usuarios exigentes que no quieren limitaciones."
+    },
+    "condition": "Nuevo",
+    "freeShipping": true,
+    "installments": "Hasta 12 cuotas sin interés con bancos aliados",
+    "seller": "LENOVO GAMING OFICIAL",
+    "screenSize": "15.6\"",
+    "updatedAt": "2026-11-15T04:32:57.329Z"
+  },
+  {
+    "id": "MCO66110105",
+    "nombre": "Portátil Gamer HP Victus 15-fa2082wm 15.6 Intel Core i5 16GB RAM 512GB SSD RTX 4050 Windows 11",
+    "precioCOP": 3499000,
+    "enlace": "https://www.mercadolibre.com.co/hp-victus-15-fa2082wm-156-16gb-512gb-ssd-w11-plata-mica-plateado/p/MCO66110105",
+    "imagen": "https://http2.mlstatic.com/D_NQ_904907-MLA70584585681_072023-O.jpg",
+    "title": "Portátil Gamer HP Victus 15-fa2082wm 15.6 Intel Core i5 16GB RAM 512GB SSD RTX 4050 Windows 11",
+    "price": 3499000,
+    "originalPrice": 4099000,
+    "discountPercentage": 15,
+    "url": "https://www.mercadolibre.com.co/hp-victus-15-fa2082wm-156-16gb-512gb-ssd-w11-plata-mica-plateado/p/MCO66110105",
+    "affiliateUrl": "https://www.mercadolibre.com.co/hp-victus-15-fa2082wm-156-16gb-512gb-ssd-w11-plata-mica-plateado/p/MCO66110105",
+    "imageUrl": "https://http2.mlstatic.com/D_NQ_904907-MLA70584585681_072023-O.jpg",
+    "brand": "HP",
+    "processor": {
+      "raw": "Intel Core i5-13420H",
+      "family": "Core i5",
+      "tierScore": 3,
+      "humanDescription": "El equilibrio perfecto entre rapidez y precio. Excelente para trabajar sin pausas."
+    },
+    "ram": {
+      "sizeGB": 16,
+      "label": "16 GB RAM",
+      "explanation": "Avanzada: permite tener decenas de pestañas, Canva y programas pesados sin frenarse."
+    },
+    "storage": {
+      "sizeGB": 512,
+      "type": "SSD",
+      "label": "512 GB SSD",
+      "explanation": "Disco SSD ultraveloz: espacio amplio para miles de fotos, videos y arranque en 8 segundos."
+    },
+    "tier": {
+      "id": "pro",
+      "label": "Alto Rendimiento / Gaming / Diseño",
+      "icon": "Gamepad2",
+      "shortDescription": "Ideal para personas creativas, diseñadores gráficos, ingenieros o entusiastas de los videojuegos.",
+      "badgeBg": "bg-purple-100 text-purple-800 border-purple-200",
+      "badgeText": "Alto Rendimiento / Gaming",
+      "recommendedFor": [
+        "Diseño gráfico (Photoshop, Illustrator, Premiere)",
+        "Edición de video 4K y producción musical",
+        "Videojuegos modernos y modelado en 3D",
+        "Programación avanzada y máquinas virtuales"
+      ],
+      "idealUser": "Creadores de contenido, gamers, ingenieros y usuarios exigentes que no quieren limitaciones."
+    },
+    "condition": "Nuevo",
+    "freeShipping": true,
+    "installments": "Hasta 12 cuotas sin interés con bancos aliados",
+    "seller": "HP TIENDA OFICIAL",
+    "screenSize": "15.6\"",
+    "updatedAt": "2026-11-15T04:32:57.329Z"
+  },
+  {
+    "id": "MCO60708786",
+    "nombre": "Notebook HP Victus 15-fa2082wm Intel Core i5 RTX 4050 16GB RAM 512GB SSD",
+    "precioCOP": 3699000,
+    "enlace": "https://www.mercadolibre.com.co/notebook-hp-victus-15-fa2082wm-con-intel-core-i5-rtx-4050-y-16-gb-de-ram/p/MCO60708786",
+    "imagen": "https://http2.mlstatic.com/D_Q_NP_814195-MLA45745170541_042021-O.webp",
+    "title": "Notebook HP Victus 15-fa2082wm Intel Core i5 RTX 4050 16GB RAM 512GB SSD",
+    "price": 3699000,
+    "originalPrice": 3899000,
+    "discountPercentage": 5,
+    "url": "https://www.mercadolibre.com.co/notebook-hp-victus-15-fa2082wm-con-intel-core-i5-rtx-4050-y-16-gb-de-ram/p/MCO60708786",
+    "affiliateUrl": "https://meli.la/2XvsJPd",
+    "imageUrl": "https://http2.mlstatic.com/D_Q_NP_814195-MLA45745170541_042021-O.webp",
+    "brand": "HP",
+    "processor": {
+      "raw": "Intel Core i5-13420H",
+      "family": "Core i5",
+      "tierScore": 3,
+      "humanDescription": "El equilibrio perfecto entre rapidez y precio. Excelente para trabajar sin pausas."
+    },
+    "ram": {
+      "sizeGB": 16,
+      "label": "16 GB RAM",
+      "explanation": "Avanzada: permite tener decenas de pestañas, Canva y programas pesados sin frenarse."
+    },
+    "storage": {
+      "sizeGB": 512,
+      "type": "SSD",
+      "label": "512 GB SSD",
+      "explanation": "Disco SSD ultraveloz: espacio amplio para miles de fotos, videos y arranque en 8 segundos."
+    },
+    "tier": {
+      "id": "pro",
+      "label": "Alto Rendimiento / Gaming / Diseño",
+      "icon": "Gamepad2",
+      "shortDescription": "Ideal para personas creativas, diseñadores gráficos, ingenieros o entusiastas de los videojuegos.",
+      "badgeBg": "bg-purple-100 text-purple-800 border-purple-200",
+      "badgeText": "Alto Rendimiento / Gaming",
+      "recommendedFor": [
+        "Diseño gráfico (Photoshop, Illustrator, Premiere)",
+        "Edición de video 4K y producción musical",
+        "Videojuegos modernos y modelado en 3D",
+        "Programación avanzada y máquinas virtuales"
+      ],
+      "idealUser": "Creadores de contenido, gamers, ingenieros y usuarios exigentes que no quieren limitaciones."
+    },
+    "condition": "Nuevo",
+    "freeShipping": true,
+    "installments": "Hasta 12 cuotas sin interés con bancos aliados",
+    "seller": "HP GAMING COLOMBIA",
+    "screenSize": "15.6\"",
+    "updatedAt": "2026-11-15T06:01:58.205Z",
+    "precioCOPFormateado": "$ 3.699.000",
+    "priceSyncedAt": "2026-11-15T06:01:58.205Z"
+  },
+  {
+    "id": "MCO2055841888",
+    "nombre": "Portátil Acer Aspire Slim 15.6 FHD Intel Core 3 N355 8GB RAM 256GB SSD",
+    "precioCOP": 1731323,
+    "enlace": "https://www.mercadolibre.com.co/ordenador-portatil-acer-aspire-slim-156-fhd-intel-core-3-8/p/MCO2055841888",
+    "imagen": "https://http2.mlstatic.com/D_Q_NP_804618-MLA45745035429_042021-O.webp",
+    "title": "Portátil Acer Aspire Slim 15.6 FHD Intel Core 3 N355 8GB RAM 256GB SSD",
+    "price": 1731323,
+    "originalPrice": 2371693,
+    "discountPercentage": 27,
+    "url": "https://www.mercadolibre.com.co/ordenador-portatil-acer-aspire-slim-156-fhd-intel-core-3-8/p/MCO2055841888",
+    "affiliateUrl": "https://meli.la/2vZXStu",
+    "imageUrl": "https://http2.mlstatic.com/D_Q_NP_804618-MLA45745035429_042021-O.webp",
+    "brand": "Acer",
+    "processor": {
+      "raw": "Intel Core i3",
+      "family": "Core i3",
+      "tierScore": 2,
+      "humanDescription": "Muy bueno para estudiar, navegar con muchas páginas, ver series y hacer trabajos de oficina."
+    },
+    "ram": {
+      "sizeGB": 8,
+      "label": "8 GB RAM",
+      "explanation": "Estándar: excelente para trabajar en Word, Excel, Zoom y navegar con fluidez."
+    },
+    "storage": {
+      "sizeGB": 256,
+      "type": "SSD",
+      "label": "256 GB SSD",
+      "explanation": "Disco de estado sólido: el portátil enciende en segundos y abre tus aplicaciones al instante."
+    },
+    "tier": {
+      "id": "basic",
+      "label": "Estudio y Oficina Básica",
+      "icon": "GraduationCap",
+      "shortDescription": "Perfecto para estudiantes, navegación web, ver películas y elaborar tareas en Word o Excel.",
+      "badgeBg": "bg-blue-100 text-blue-800 border-blue-200",
+      "badgeText": "Estudio y Oficina Básica",
+      "recommendedFor": [
+        "Clases virtuales, tareas escolares y Zoom",
+        "Navegación web, YouTube y Netflix",
+        "Word, Excel, PowerPoint y lectura de PDFs",
+        "Administración básica del hogar y redes sociales"
+      ],
+      "idealUser": "Estudiantes de colegio o universidad básica, adultos mayores y tareas sencillas del hogar."
+    },
+    "condition": "Nuevo",
+    "freeShipping": true,
+    "installments": "Hasta 12 cuotas sin interés con bancos aliados",
+    "seller": "ACER TIENDA OFICIAL",
+    "screenSize": "15.6\"",
+    "updatedAt": "2026-11-15T06:01:58.205Z",
+    "precioCOPFormateado": "$ 1.731.323",
+    "priceSyncedAt": "2026-11-15T06:01:58.205Z"
+  },
+  {
+    "id": "MCO4348640806",
+    "nombre": "Portátil Asus Vivobook Go 14 Intel Celeron 4GB RAM 256GB SSD",
+    "precioCOP": 1920042,
+    "enlace": "https://articulo.mercadolibre.com.co/MCO-4348640806-ordenador-portatil-asus-vivobook-go-14-de-4-gb-de-ram-256-gb-_JM",
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_887273-MLA52853469798_122022-O.webp",
+    "title": "Portátil Asus Vivobook Go 14 Intel Celeron 4GB RAM 256GB SSD",
+    "price": 1920042,
+    "originalPrice": 2400052,
+    "discountPercentage": 20,
+    "url": "https://articulo.mercadolibre.com.co/MCO-4348640806-ordenador-portatil-asus-vivobook-go-14-de-4-gb-de-ram-256-gb-_JM",
+    "imageUrl": "https://http2.mlstatic.com/D_NQ_NP_887273-MLA52853469798_122022-O.webp",
+    "brand": "Asus",
+    "processor": {
+      "raw": "Intel Celeron N4020 / N4500",
+      "family": "Celeron / Pentium",
+      "tierScore": 1,
+      "humanDescription": "Básico para navegación ligera en internet, ver YouTube y redactar documentos sencillos."
+    },
+    "ram": {
+      "sizeGB": 4,
+      "label": "4 GB RAM",
+      "explanation": "Básica: suficiente para pocas ventanas abiertas al tiempo."
+    },
+    "storage": {
+      "sizeGB": 256,
+      "type": "SSD",
+      "label": "256 GB SSD",
+      "explanation": "Disco de estado sólido: el portátil enciende en segundos y abre tus aplicaciones al instante."
+    },
+    "tier": {
+      "id": "basic",
+      "label": "Estudio y Oficina Básica",
+      "icon": "GraduationCap",
+      "shortDescription": "Perfecto para estudiantes, navegación web, ver películas y elaborar tareas en Word o Excel.",
+      "badgeBg": "bg-blue-100 text-blue-800 border-blue-200",
+      "badgeText": "Estudio y Oficina Básica",
+      "recommendedFor": [
+        "Clases virtuales, tareas escolares y Zoom",
+        "Navegación web, YouTube y Netflix",
+        "Word, Excel, PowerPoint y lectura de PDFs",
+        "Administración básica del hogar y redes sociales"
+      ],
+      "idealUser": "Estudiantes de colegio o universidad básica, adultos mayores y tareas sencillas del hogar."
+    },
+    "condition": "Nuevo",
+    "freeShipping": true,
+    "installments": "Hasta 12 cuotas sin interés con bancos aliados",
+    "seller": "ASUS DISTRIBUIDOR COL",
+    "screenSize": "14\"",
+    "updatedAt": "2026-11-15T06:01:58.205Z",
+    "precioCOPFormateado": "$ 1.920.042",
+    "priceSyncedAt": "2026-11-15T06:01:58.205Z"
+  },
+  {
+    "id": "MCO4561089358",
+    "nombre": "Notebook HP Pavilion 15-eg2502la Intel Core i5-1235U 8GB RAM 512GB SSD",
+    "precioCOP": 3660296,
+    "enlace": "https://articulo.mercadolibre.com.co/MCO-4561089358-notebook-hp-pavilion-15-eg2502la-intel-core-i5-8gb-ram-_JM",
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_630705-MLA71631242649_092023-O.webp",
+    "title": "Notebook HP Pavilion 15-eg2502la Intel Core i5-1235U 8GB RAM 512GB SSD",
+    "price": 3660296,
+    "url": "https://articulo.mercadolibre.com.co/MCO-4561089358-notebook-hp-pavilion-15-eg2502la-intel-core-i5-8gb-ram-_JM",
+    "imageUrl": "https://http2.mlstatic.com/D_NQ_NP_630705-MLA71631242649_092023-O.webp",
+    "brand": "HP",
+    "processor": {
+      "raw": "Intel Core i5-1235U",
+      "family": "Core i5",
+      "tierScore": 3,
+      "humanDescription": "El equilibrio perfecto entre rapidez y precio. Excelente para trabajar sin pausas."
+    },
+    "ram": {
+      "sizeGB": 8,
+      "label": "8 GB RAM",
+      "explanation": "Estándar: excelente para trabajar en Word, Excel, Zoom y navegar con fluidez."
+    },
+    "storage": {
+      "sizeGB": 512,
+      "type": "SSD",
+      "label": "512 GB SSD",
+      "explanation": "Disco SSD ultraveloz: espacio amplio para miles de fotos, videos y arranque en 8 segundos."
+    },
+    "tier": {
+      "id": "work",
+      "label": "Multitarea y Trabajo Fluido",
+      "icon": "Briefcase",
+      "shortDescription": "Excelente para profesionales, teletrabajo, administración y personas que necesitan rapidez en el día a día.",
+      "badgeBg": "bg-emerald-100 text-emerald-800 border-emerald-200",
+      "badgeText": "Multitarea y Trabajo Fluido",
+      "recommendedFor": [
+        "Trabajo remoto y llamadas de Meet / Teams sin cortes",
+        "Tener 30 pestañas abiertas mientras escuchas música",
+        "Facturación, software contable, bases de datos y CRM",
+        "Creación de contenido para redes en Canva"
+      ],
+      "idealUser": "Profesionales independientes, comerciantes, oficinistas y estudiantes que buscan rapidez y longevidad."
+    },
+    "condition": "Nuevo",
+    "freeShipping": true,
+    "installments": "Hasta 12 cuotas sin interés con bancos aliados",
+    "seller": "HP TIENDA OFICIAL",
+    "screenSize": "15.6\"",
+    "updatedAt": "2026-11-15T06:01:58.205Z",
+    "precioCOPFormateado": "$ 3.660.296",
+    "priceSyncedAt": "2026-11-15T06:01:58.205Z"
+  },
+  {
+    "id": "MCOU2491230500",
+    "nombre": "Portátil HP Pavilion Intel Core i5-1235U SSD 1TB RAM 32GB 15.6 FHD",
+    "precioCOP": 2799900,
+    "enlace": "https://www.mercadolibre.com.co/portatil-hp-pavilion-intel-core-i5-1235u-ssd-1tb--ram-32gb/up/MCOU2491230500",
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_701171-MLU70777952886_082023-O.webp",
+    "title": "Portátil HP Pavilion Intel Core i5-1235U SSD 1TB RAM 32GB 15.6 FHD",
+    "price": 2799900,
+    "url": "https://www.mercadolibre.com.co/portatil-hp-pavilion-intel-core-i5-1235u-ssd-1tb--ram-32gb/up/MCOU2491230500",
+    "affiliateUrl": "https://meli.la/2ucWKpJ",
+    "imageUrl": "https://http2.mlstatic.com/D_NQ_NP_701171-MLU70777952886_082023-O.webp",
+    "brand": "HP",
+    "processor": {
+      "raw": "Intel Core i5-1235U",
+      "family": "Core i5",
+      "tierScore": 3,
+      "humanDescription": "El equilibrio perfecto entre rapidez y precio. Excelente para trabajar sin pausas."
+    },
+    "ram": {
+      "sizeGB": 32,
+      "label": "32 GB RAM",
+      "explanation": "Profesional: diseñada para edición 4K, diseño 3D y juegos de última generación."
+    },
+    "storage": {
+      "sizeGB": 1024,
+      "type": "SSD",
+      "label": "1 TB SSD",
+      "explanation": "Disco SSD ultraveloz: espacio amplio para miles de fotos, videos y arranque en 8 segundos."
+    },
+    "tier": {
+      "id": "pro",
+      "label": "Alto Rendimiento / Gaming / Diseño",
+      "icon": "Gamepad2",
+      "shortDescription": "Ideal para personas creativas, diseñadores gráficos, ingenieros o entusiastas de los videojuegos.",
+      "badgeBg": "bg-purple-100 text-purple-800 border-purple-200",
+      "badgeText": "Alto Rendimiento / Gaming",
+      "recommendedFor": [
+        "Diseño gráfico (Photoshop, Illustrator, Premiere)",
+        "Edición de video 4K y producción musical",
+        "Videojuegos modernos y modelado en 3D",
+        "Programación avanzada y máquinas virtuales"
+      ],
+      "idealUser": "Creadores de contenido, gamers, ingenieros y usuarios exigentes que no quieren limitaciones."
+    },
+    "condition": "Nuevo",
+    "freeShipping": true,
+    "installments": "Hasta 12 cuotas sin interés con bancos aliados",
+    "seller": "HP PARTNER COLOMBIA",
+    "screenSize": "15.6\"",
+    "updatedAt": "2026-11-15T06:01:58.205Z",
+    "precioCOPFormateado": "$ 2.799.900",
+    "priceSyncedAt": "2026-11-15T06:01:58.205Z"
+  },
+  {
+    "id": "MCO2143743897",
+    "nombre": "Portátil HP Pavilion Gaming 15 AMD Ryzen 5 GTX 1650 8GB RAM 512GB SSD",
+    "precioCOP": 2799000,
+    "enlace": "https://articulo.mercadolibre.com.co/MCO-2143743897-portatil-hp-pavilion-gaming-15-ryzen-5-gtx-1650-8gb-512gb-_JM",
+    "imagen": "https://http2.mlstatic.com/D_Q_NP_767595-MLA45745061922_042021-O.webp",
+    "title": "Portátil HP Pavilion Gaming 15 AMD Ryzen 5 GTX 1650 8GB RAM 512GB SSD",
+    "price": 2799000,
+    "originalPrice": 3299000,
+    "discountPercentage": 15,
+    "url": "https://articulo.mercadolibre.com.co/MCO-2143743897-portatil-hp-pavilion-gaming-15-ryzen-5-gtx-1650-8gb-512gb-_JM",
+    "imageUrl": "https://http2.mlstatic.com/D_Q_NP_767595-MLA45745061922_042021-O.webp",
+    "brand": "HP",
+    "processor": {
+      "raw": "AMD Ryzen 5 5600h",
+      "family": "Ryzen 5",
+      "tierScore": 3,
+      "humanDescription": "Excelente rendimiento para estudiar, programar, trabajar y videollamadas fluidas."
+    },
+    "ram": {
+      "sizeGB": 8,
+      "label": "8 GB RAM",
+      "explanation": "Estándar: excelente para trabajar en Word, Excel, Zoom y navegar con fluidez."
+    },
+    "storage": {
+      "sizeGB": 512,
+      "type": "SSD",
+      "label": "512 GB SSD",
+      "explanation": "Disco SSD ultraveloz: espacio amplio para miles de fotos, videos y arranque en 8 segundos."
+    },
+    "tier": {
+      "id": "pro",
+      "label": "Alto Rendimiento / Gaming / Diseño",
+      "icon": "Gamepad2",
+      "shortDescription": "Ideal para personas creativas, diseñadores gráficos, ingenieros o entusiastas de los videojuegos.",
+      "badgeBg": "bg-purple-100 text-purple-800 border-purple-200",
+      "badgeText": "Alto Rendimiento / Gaming",
+      "recommendedFor": [
+        "Diseño gráfico (Photoshop, Illustrator, Premiere)",
+        "Edición de video 4K y producción musical",
+        "Videojuegos modernos y modelado en 3D",
+        "Programación avanzada y máquinas virtuales"
+      ],
+      "idealUser": "Creadores de contenido, gamers, ingenieros y usuarios exigentes que no quieren limitaciones."
+    },
+    "condition": "Nuevo",
+    "freeShipping": true,
+    "installments": "Hasta 12 cuotas sin interés con bancos aliados",
+    "seller": "HP GAMING COLOMBIA",
+    "screenSize": "15.6\"",
+    "updatedAt": "2026-11-15T04:32:57.329Z"
+  },
+  {
+    "id": "MCO65384964",
+    "nombre": "Portátil Lenovo IdeaPad Slim 3 AMD Ryzen 7 7735HS 24GB RAM 512GB SSD Azul",
+    "precioCOP": 2995000,
+    "enlace": "https://www.mercadolibre.com.co/lenovo-ideapad-slim-3-amd-ryzen-7-7735hs-24gb-ram-512gb-ssd-azul/p/MCO65384964",
+    "imagen": "https://http2.mlstatic.com/D_NQ_932342-MLA70557135564_072023-O.jpg",
+    "title": "Portátil Lenovo IdeaPad Slim 3 AMD Ryzen 7 7735HS 24GB RAM 512GB SSD Azul",
+    "price": 2995000,
+    "url": "https://www.mercadolibre.com.co/lenovo-ideapad-slim-3-amd-ryzen-7-7735hs-24gb-ram-512gb-ssd-azul/p/MCO65384964",
+    "affiliateUrl": "https://meli.la/1Amoq5G",
+    "imageUrl": "https://http2.mlstatic.com/D_NQ_932342-MLA70557135564_072023-O.jpg",
+    "brand": "Lenovo",
+    "processor": {
+      "raw": "AMD Ryzen 7 7735hs",
+      "family": "Ryzen 7",
+      "tierScore": 4,
+      "humanDescription": "Muy veloz y potente con múltiples núcleos, perfecto para creadores y multitarea pesada."
+    },
+    "ram": {
+      "sizeGB": 24,
+      "label": "24 GB RAM",
+      "explanation": "Profesional: diseñada para edición 4K, diseño 3D y juegos de última generación."
+    },
+    "storage": {
+      "sizeGB": 512,
+      "type": "SSD",
+      "label": "512 GB SSD",
+      "explanation": "Disco SSD ultraveloz: espacio amplio para miles de fotos, videos y arranque en 8 segundos."
+    },
+    "tier": {
+      "id": "pro",
+      "label": "Alto Rendimiento / Gaming / Diseño",
+      "icon": "Gamepad2",
+      "shortDescription": "Ideal para personas creativas, diseñadores gráficos, ingenieros o entusiastas de los videojuegos.",
+      "badgeBg": "bg-purple-100 text-purple-800 border-purple-200",
+      "badgeText": "Alto Rendimiento / Gaming",
+      "recommendedFor": [
+        "Diseño gráfico (Photoshop, Illustrator, Premiere)",
+        "Edición de video 4K y producción musical",
+        "Videojuegos modernos y modelado en 3D",
+        "Programación avanzada y máquinas virtuales"
+      ],
+      "idealUser": "Creadores de contenido, gamers, ingenieros y usuarios exigentes que no quieren limitaciones."
+    },
+    "condition": "Nuevo",
+    "freeShipping": true,
+    "installments": "Hasta 12 cuotas sin interés con bancos aliados",
+    "seller": "LENOVO TIENDA OFICIAL",
+    "screenSize": "15.3\"",
+    "updatedAt": "2026-11-15T06:01:58.205Z",
+    "precioCOPFormateado": "$ 2.995.000",
+    "priceSyncedAt": "2026-11-15T06:01:58.205Z"
+  },
+  {
+    "id": "MCO65915099",
+    "nombre": "Notebook Lenovo IdeaPad Slim 3 15ARP10 Ryzen 7 7735HS 24GB DDR5 512GB SSD NVMe 15.3 IPS",
+    "precioCOP": 3050000,
+    "enlace": "https://www.mercadolibre.com.co/notebook-lenovo-ideapad-slim-3-15arp10-ryzen-7-7735hs-24gb-ddr5-512gb-ssd-nvme-153-wuxga-ips-1920x1200-wifi-6-camara-ir-teclado-espanol/p/MCO65915099",
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_645272-MLU71430001106_092023-O.webp",
+    "title": "Notebook Lenovo IdeaPad Slim 3 15ARP10 Ryzen 7 7735HS 24GB DDR5 512GB SSD NVMe 15.3 IPS",
+    "price": 3050000,
+    "url": "https://www.mercadolibre.com.co/notebook-lenovo-ideapad-slim-3-15arp10-ryzen-7-7735hs-24gb-ddr5-512gb-ssd-nvme-153-wuxga-ips-1920x1200-wifi-6-camara-ir-teclado-espanol/p/MCO65915099",
+    "affiliateUrl": "https://meli.la/1nfjHnL",
+    "imageUrl": "https://http2.mlstatic.com/D_NQ_NP_645272-MLU71430001106_092023-O.webp",
+    "brand": "Lenovo",
+    "processor": {
+      "raw": "AMD Ryzen 7 7735hs",
+      "family": "Ryzen 7",
+      "tierScore": 4,
+      "humanDescription": "Muy veloz y potente con múltiples núcleos, perfecto para creadores y multitarea pesada."
+    },
+    "ram": {
+      "sizeGB": 24,
+      "label": "24 GB RAM",
+      "explanation": "Profesional: diseñada para edición 4K, diseño 3D y juegos de última generación."
+    },
+    "storage": {
+      "sizeGB": 512,
+      "type": "SSD",
+      "label": "512 GB SSD",
+      "explanation": "Disco SSD ultraveloz: espacio amplio para miles de fotos, videos y arranque en 8 segundos."
+    },
+    "tier": {
+      "id": "pro",
+      "label": "Alto Rendimiento / Gaming / Diseño",
+      "icon": "Gamepad2",
+      "shortDescription": "Ideal para personas creativas, diseñadores gráficos, ingenieros o entusiastas de los videojuegos.",
+      "badgeBg": "bg-purple-100 text-purple-800 border-purple-200",
+      "badgeText": "Alto Rendimiento / Gaming",
+      "recommendedFor": [
+        "Diseño gráfico (Photoshop, Illustrator, Premiere)",
+        "Edición de video 4K y producción musical",
+        "Videojuegos modernos y modelado en 3D",
+        "Programación avanzada y máquinas virtuales"
+      ],
+      "idealUser": "Creadores de contenido, gamers, ingenieros y usuarios exigentes que no quieren limitaciones."
+    },
+    "condition": "Nuevo",
+    "freeShipping": true,
+    "installments": "Hasta 12 cuotas sin interés con bancos aliados",
+    "seller": "LENOVO TIENDA OFICIAL",
+    "screenSize": "15.3\"",
+    "updatedAt": "2026-11-15T06:01:58.205Z",
+    "precioCOPFormateado": "$ 3.050.000",
+    "priceSyncedAt": "2026-11-15T06:01:58.205Z"
+  },
+  {
+    "id": "MCO65444811",
+    "nombre": "Lenovo IdeaPad Slim 3 Intel Core i5-13420H 24GB RAM 512GB SSD 15.3 FHD Verde Claro",
+    "precioCOP": 2467900,
+    "enlace": "https://www.mercadolibre.com.co/lenovo-ideapad-slim-3-i5-13420h-24gb-ram-512gb-ssd-153-fhd-verde-claro/p/MCO65444811",
+    "imagen": "https://http2.mlstatic.com/D_Q_NP_781504-MLA45745269368_042021-O.webp",
+    "title": "Lenovo IdeaPad Slim 3 Intel Core i5-13420H 24GB RAM 512GB SSD 15.3 FHD Verde Claro",
+    "price": 2467900,
+    "originalPrice": 3189900,
+    "discountPercentage": 23,
+    "url": "https://www.mercadolibre.com.co/lenovo-ideapad-slim-3-i5-13420h-24gb-ram-512gb-ssd-153-fhd-verde-claro/p/MCO65444811",
+    "affiliateUrl": "https://meli.la/2MsbEDb",
+    "imageUrl": "https://http2.mlstatic.com/D_Q_NP_781504-MLA45745269368_042021-O.webp",
+    "brand": "Lenovo",
+    "processor": {
+      "raw": "Intel Core i5-13420H",
+      "family": "Core i5",
+      "tierScore": 3,
+      "humanDescription": "El equilibrio perfecto entre rapidez y precio. Excelente para trabajar sin pausas."
+    },
+    "ram": {
+      "sizeGB": 24,
+      "label": "24 GB RAM",
+      "explanation": "Profesional: diseñada para edición 4K, diseño 3D y juegos de última generación."
+    },
+    "storage": {
+      "sizeGB": 512,
+      "type": "SSD",
+      "label": "512 GB SSD",
+      "explanation": "Disco SSD ultraveloz: espacio amplio para miles de fotos, videos y arranque en 8 segundos."
+    },
+    "tier": {
+      "id": "pro",
+      "label": "Alto Rendimiento / Gaming / Diseño",
+      "icon": "Gamepad2",
+      "shortDescription": "Ideal para personas creativas, diseñadores gráficos, ingenieros o entusiastas de los videojuegos.",
+      "badgeBg": "bg-purple-100 text-purple-800 border-purple-200",
+      "badgeText": "Alto Rendimiento / Gaming",
+      "recommendedFor": [
+        "Diseño gráfico (Photoshop, Illustrator, Premiere)",
+        "Edición de video 4K y producción musical",
+        "Videojuegos modernos y modelado en 3D",
+        "Programación avanzada y máquinas virtuales"
+      ],
+      "idealUser": "Creadores de contenido, gamers, ingenieros y usuarios exigentes que no quieren limitaciones."
+    },
+    "condition": "Nuevo",
+    "freeShipping": true,
+    "installments": "Hasta 12 cuotas sin interés con bancos aliados",
+    "seller": "LENOVO TIENDA OFICIAL",
+    "screenSize": "15.3\"",
+    "updatedAt": "2026-11-15T06:01:58.205Z",
+    "precioCOPFormateado": "$ 2.467.900",
+    "priceSyncedAt": "2026-11-15T06:01:58.205Z"
+  },
+  {
+    "id": "MCOU3212958128",
+    "nombre": "Lenovo IdeaPad Slim 3 Core i3-N305 15.6 Pulgadas 8GB RAM 512GB SSD Azul Claro",
+    "precioCOP": 1489000,
+    "enlace": "https://www.mercadolibre.com.co/lenovo-ideapad-slim-3-i3-156--8gb-512gb-ssd-azul-claro/up/MCOU3212958128",
+    "imagen": "https://http2.mlstatic.com/D_Q_NP_614196-MLA45744959591_042021-O.webp",
+    "title": "Lenovo IdeaPad Slim 3 Core i3-N305 15.6 Pulgadas 8GB RAM 512GB SSD Azul Claro",
+    "price": 1489000,
+    "originalPrice": 1799000,
+    "discountPercentage": 17,
+    "url": "https://www.mercadolibre.com.co/lenovo-ideapad-slim-3-i3-156--8gb-512gb-ssd-azul-claro/up/MCOU3212958128",
+    "affiliateUrl": "https://www.mercadolibre.com.co/lenovo-ideapad-slim-3-i3-156--8gb-512gb-ssd-azul-claro/up/MCOU3212958128",
+    "imageUrl": "https://http2.mlstatic.com/D_Q_NP_614196-MLA45744959591_042021-O.webp",
+    "brand": "Lenovo",
+    "processor": {
+      "raw": "Intel Core i3",
+      "family": "Core i3",
+      "tierScore": 2,
+      "humanDescription": "Muy bueno para estudiar, navegar con muchas páginas, ver series y hacer trabajos de oficina."
+    },
+    "ram": {
+      "sizeGB": 8,
+      "label": "8 GB RAM",
+      "explanation": "Estándar: excelente para trabajar en Word, Excel, Zoom y navegar con fluidez."
+    },
+    "storage": {
+      "sizeGB": 512,
+      "type": "SSD",
+      "label": "512 GB SSD",
+      "explanation": "Disco SSD ultraveloz: espacio amplio para miles de fotos, videos y arranque en 8 segundos."
+    },
+    "tier": {
+      "id": "basic",
+      "label": "Estudio y Oficina Básica",
+      "icon": "GraduationCap",
+      "shortDescription": "Perfecto para estudiantes, navegación web, ver películas y elaborar tareas en Word o Excel.",
+      "badgeBg": "bg-blue-100 text-blue-800 border-blue-200",
+      "badgeText": "Estudio y Oficina Básica",
+      "recommendedFor": [
+        "Clases virtuales, tareas escolares y Zoom",
+        "Navegación web, YouTube y Netflix",
+        "Word, Excel, PowerPoint y lectura de PDFs",
+        "Administración básica del hogar y redes sociales"
+      ],
+      "idealUser": "Estudiantes de colegio o universidad básica, adultos mayores y tareas sencillas del hogar."
+    },
+    "condition": "Nuevo",
+    "freeShipping": true,
+    "installments": "Hasta 12 cuotas sin interés con bancos aliados",
+    "seller": "LENOVO DIRECTO COL",
+    "screenSize": "15.6\"",
+    "updatedAt": "2026-11-15T04:32:57.329Z"
+  },
+  {
+    "id": "MCO51232872",
+    "nombre": "Portátil Lenovo IdeaPad Slim 3 15IRH10 Intel Core i7-13620H 24GB 512GB SSD Windows 11 15.3",
+    "precioCOP": 2772000,
+    "enlace": "https://www.mercadolibre.com.co/portatil-lenovo-ideapad-slim-3-15irh10-intel-core-i7-13620h-24-gb-512-gb-ssd-windows-11-153-83ns0008br-luna-grey/p/MCO51232872",
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_666648-MCO111513402025_052026-O.webp",
+    "title": "Portátil Lenovo IdeaPad Slim 3 15IRH10 Intel Core i7-13620H 24GB 512GB SSD Windows 11 15.3",
+    "price": 2772000,
+    "originalPrice": 4281200,
+    "discountPercentage": 35,
+    "url": "https://www.mercadolibre.com.co/portatil-lenovo-ideapad-slim-3-15irh10-intel-core-i7-13620h-24-gb-512-gb-ssd-windows-11-153-83ns0008br-luna-grey/p/MCO51232872",
+    "affiliateUrl": "https://meli.la/1W5NaBa",
+    "imageUrl": "https://http2.mlstatic.com/D_NQ_NP_666648-MCO111513402025_052026-O.webp",
+    "brand": "Lenovo",
+    "processor": {
+      "raw": "Intel Core i7-13620H",
+      "family": "Core i7",
+      "tierScore": 4,
+      "humanDescription": "Procesador de gama alta, ideal para diseño gráfico profesional y programas exigentes."
+    },
+    "ram": {
+      "sizeGB": 24,
+      "label": "24 GB RAM",
+      "explanation": "Profesional: diseñada para edición 4K, diseño 3D y juegos de última generación."
+    },
+    "storage": {
+      "sizeGB": 512,
+      "type": "SSD",
+      "label": "512 GB SSD",
+      "explanation": "Disco SSD ultraveloz: espacio amplio para miles de fotos, videos y arranque en 8 segundos."
+    },
+    "tier": {
+      "id": "pro",
+      "label": "Alto Rendimiento / Gaming / Diseño",
+      "icon": "Gamepad2",
+      "shortDescription": "Ideal para personas creativas, diseñadores gráficos, ingenieros o entusiastas de los videojuegos.",
+      "badgeBg": "bg-purple-100 text-purple-800 border-purple-200",
+      "badgeText": "Alto Rendimiento / Gaming",
+      "recommendedFor": [
+        "Diseño gráfico (Photoshop, Illustrator, Premiere)",
+        "Edición de video 4K y producción musical",
+        "Videojuegos modernos y modelado en 3D",
+        "Programación avanzada y máquinas virtuales"
+      ],
+      "idealUser": "Creadores de contenido, gamers, ingenieros y usuarios exigentes que no quieren limitaciones."
+    },
+    "condition": "Nuevo",
+    "freeShipping": true,
+    "installments": "Hasta 12 cuotas sin interés con bancos aliados",
+    "seller": "LENOVO TIENDA OFICIAL",
+    "screenSize": "15.3\"",
+    "updatedAt": "2026-11-15T06:01:58.205Z",
+    "precioCOPFormateado": "$ 2.772.000",
+    "priceSyncedAt": "2026-11-15T06:01:58.205Z"
+  },
+  {
+    "id": "MCOU3090447988",
+    "nombre": "Lenovo IdeaPad Slim 3 15IAN8 Intel Core i3-N305 8GB RAM 256GB SSD 15.6 FHD",
+    "precioCOP": 1369000,
+    "enlace": "https://www.mercadolibre.com.co/lenovo-ideapad-slim-3-15ian8-82xb0031lm/up/MCOU3090447988",
+    "imagen": "https://http2.mlstatic.com/D_600330-CBT93495084193_092025-O.webp",
+    "title": "Lenovo IdeaPad Slim 3 15IAN8 Intel Core i3-N305 8GB RAM 256GB SSD 15.6 FHD",
+    "price": 1369000,
+    "originalPrice": 1649000,
+    "discountPercentage": 17,
+    "url": "https://www.mercadolibre.com.co/lenovo-ideapad-slim-3-15ian8-82xb0031lm/up/MCOU3090447988",
+    "affiliateUrl": "https://www.mercadolibre.com.co/lenovo-ideapad-slim-3-15ian8-82xb0031lm/up/MCOU3090447988",
+    "imageUrl": "https://http2.mlstatic.com/D_600330-CBT93495084193_092025-O.webp",
+    "brand": "Lenovo",
+    "processor": {
+      "raw": "Intel Core i3",
+      "family": "Core i3",
+      "tierScore": 2,
+      "humanDescription": "Muy bueno para estudiar, navegar con muchas páginas, ver series y hacer trabajos de oficina."
+    },
+    "ram": {
+      "sizeGB": 8,
+      "label": "8 GB RAM",
+      "explanation": "Estándar: excelente para trabajar en Word, Excel, Zoom y navegar con fluidez."
+    },
+    "storage": {
+      "sizeGB": 256,
+      "type": "SSD",
+      "label": "256 GB SSD",
+      "explanation": "Disco de estado sólido: el portátil enciende en segundos y abre tus aplicaciones al instante."
+    },
+    "tier": {
+      "id": "basic",
+      "label": "Estudio y Oficina Básica",
+      "icon": "GraduationCap",
+      "shortDescription": "Perfecto para estudiantes, navegación web, ver películas y elaborar tareas en Word o Excel.",
+      "badgeBg": "bg-blue-100 text-blue-800 border-blue-200",
+      "badgeText": "Estudio y Oficina Básica",
+      "recommendedFor": [
+        "Clases virtuales, tareas escolares y Zoom",
+        "Navegación web, YouTube y Netflix",
+        "Word, Excel, PowerPoint y lectura de PDFs",
+        "Administración básica del hogar y redes sociales"
+      ],
+      "idealUser": "Estudiantes de colegio o universidad básica, adultos mayores y tareas sencillas del hogar."
+    },
+    "condition": "Nuevo",
+    "freeShipping": true,
+    "installments": "Hasta 12 cuotas sin interés con bancos aliados",
+    "seller": "COMPUTO COLOMBIA OFICIAL",
+    "screenSize": "15.6\"",
+    "updatedAt": "2026-11-15T04:32:57.330Z"
+  },
+  {
+    "id": "MCO3606557414",
+    "nombre": "Apple MacBook Air M2 13.6 Pulgadas 8GB de RAM 512GB SSD Retina",
+    "precioCOP": 4066892,
+    "enlace": "https://articulo.mercadolibre.com.co/MCO-3606557414-macbook-air-m2-136-pulgadas-8-gb-de-ram-512-gb-ssd-_JM",
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_708839-MLA51356236557_082022-O.webp",
+    "title": "Apple MacBook Air M2 13.6 Pulgadas 8GB de RAM 512GB SSD Retina",
+    "price": 4066892,
+    "url": "https://articulo.mercadolibre.com.co/MCO-3606557414-macbook-air-m2-136-pulgadas-8-gb-de-ram-512-gb-ssd-_JM",
+    "imageUrl": "https://http2.mlstatic.com/D_NQ_NP_708839-MLA51356236557_082022-O.webp",
+    "brand": "Apple",
+    "processor": {
+      "raw": "Apple M2",
+      "family": "Apple M2",
+      "tierScore": 4,
+      "humanDescription": "Súper fluido, silencioso y con excelente rendimiento para trabajo exigente."
+    },
+    "ram": {
+      "sizeGB": 8,
+      "label": "8 GB RAM",
+      "explanation": "Estándar: excelente para trabajar en Word, Excel, Zoom y navegar con fluidez."
+    },
+    "storage": {
+      "sizeGB": 512,
+      "type": "SSD",
+      "label": "512 GB SSD",
+      "explanation": "Disco SSD ultraveloz: espacio amplio para miles de fotos, videos y arranque en 8 segundos."
+    },
+    "tier": {
+      "id": "work",
+      "label": "Multitarea y Trabajo Fluido",
+      "icon": "Briefcase",
+      "shortDescription": "Excelente para profesionales, teletrabajo, administración y personas que necesitan rapidez en el día a día.",
+      "badgeBg": "bg-emerald-100 text-emerald-800 border-emerald-200",
+      "badgeText": "Multitarea y Trabajo Fluido",
+      "recommendedFor": [
+        "Trabajo remoto y llamadas de Meet / Teams sin cortes",
+        "Tener 30 pestañas abiertas mientras escuchas música",
+        "Facturación, software contable, bases de datos y CRM",
+        "Creación de contenido para redes en Canva"
+      ],
+      "idealUser": "Profesionales independientes, comerciantes, oficinistas y estudiantes que buscan rapidez y longevidad."
+    },
+    "condition": "Nuevo",
+    "freeShipping": true,
+    "installments": "Hasta 12 cuotas sin interés con bancos aliados",
+    "seller": "APPLE TIENDA OFICIAL",
+    "screenSize": "13.6\"",
+    "updatedAt": "2026-11-15T06:01:58.205Z",
+    "precioCOPFormateado": "$ 4.066.892",
+    "priceSyncedAt": "2026-11-15T06:01:58.205Z"
+  },
+  {
+    "id": "MCOU3926527320",
+    "nombre": "Apple MacBook Air M2 8GB RAM 256GB SSD A2681 Gris Espacial 13.6",
+    "precioCOP": 4199000,
+    "enlace": "https://www.mercadolibre.com.co/macbook-air-m2-8gb-ram--256gb-ssd-m2-a2681-gris-espacial/up/MCOU3926527320",
+    "imagen": "https://http2.mlstatic.com/D_673019-MLA76813484542_062024-O.webp",
+    "title": "Apple MacBook Air M2 8GB RAM 256GB SSD A2681 Gris Espacial 13.6",
+    "price": 4199000,
+    "originalPrice": 4799000,
+    "discountPercentage": 13,
+    "url": "https://www.mercadolibre.com.co/macbook-air-m2-8gb-ram--256gb-ssd-m2-a2681-gris-espacial/up/MCOU3926527320",
+    "affiliateUrl": "https://www.mercadolibre.com.co/macbook-air-m2-8gb-ram--256gb-ssd-m2-a2681-gris-espacial/up/MCOU3926527320",
+    "imageUrl": "https://http2.mlstatic.com/D_673019-MLA76813484542_062024-O.webp",
+    "brand": "Apple",
+    "processor": {
+      "raw": "Apple M2",
+      "family": "Apple M2",
+      "tierScore": 4,
+      "humanDescription": "Súper fluido, silencioso y con excelente rendimiento para trabajo exigente."
+    },
+    "ram": {
+      "sizeGB": 8,
+      "label": "8 GB RAM",
+      "explanation": "Estándar: excelente para trabajar en Word, Excel, Zoom y navegar con fluidez."
+    },
+    "storage": {
+      "sizeGB": 256,
+      "type": "SSD",
+      "label": "256 GB SSD",
+      "explanation": "Disco de estado sólido: el portátil enciende en segundos y abre tus aplicaciones al instante."
+    },
+    "tier": {
+      "id": "work",
+      "label": "Multitarea y Trabajo Fluido",
+      "icon": "Briefcase",
+      "shortDescription": "Excelente para profesionales, teletrabajo, administración y personas que necesitan rapidez en el día a día.",
+      "badgeBg": "bg-emerald-100 text-emerald-800 border-emerald-200",
+      "badgeText": "Multitarea y Trabajo Fluido",
+      "recommendedFor": [
+        "Trabajo remoto y llamadas de Meet / Teams sin cortes",
+        "Tener 30 pestañas abiertas mientras escuchas música",
+        "Facturación, software contable, bases de datos y CRM",
+        "Creación de contenido para redes en Canva"
+      ],
+      "idealUser": "Profesionales independientes, comerciantes, oficinistas y estudiantes que buscan rapidez y longevidad."
+    },
+    "condition": "Nuevo",
+    "freeShipping": true,
+    "installments": "Hasta 12 cuotas sin interés con bancos aliados",
+    "seller": "MAC CENTER AUTORIZADO",
+    "screenSize": "13.6\"",
+    "updatedAt": "2026-11-15T04:32:57.330Z"
+  },
+  {
+    "id": "MCO2143034591",
+    "nombre": "Portátil Dell Inspiron 15 3000 15.6 Táctil Intel Core i5 8GB RAM 256GB SSD",
+    "precioCOP": 3268563,
+    "enlace": "https://articulo.mercadolibre.com.co/MCO-2143034591-portatil-dell-inspiron-15-3000-de-156-tactil-i5-8gb-256g-_JM",
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_629768-MLU72829273907_112023-O.webp",
+    "title": "Portátil Dell Inspiron 15 3000 15.6 Táctil Intel Core i5 8GB RAM 256GB SSD",
+    "price": 3268563,
+    "url": "https://articulo.mercadolibre.com.co/MCO-2143034591-portatil-dell-inspiron-15-3000-de-156-tactil-i5-8gb-256g-_JM",
+    "imageUrl": "https://http2.mlstatic.com/D_NQ_NP_629768-MLU72829273907_112023-O.webp",
+    "brand": "Dell",
+    "processor": {
+      "raw": "Intel Core i5-1135G7",
+      "family": "Core i5",
+      "tierScore": 3,
+      "humanDescription": "El equilibrio perfecto entre rapidez y precio. Excelente para trabajar sin pausas."
+    },
+    "ram": {
+      "sizeGB": 8,
+      "label": "8 GB RAM",
+      "explanation": "Estándar: excelente para trabajar en Word, Excel, Zoom y navegar con fluidez."
+    },
+    "storage": {
+      "sizeGB": 256,
+      "type": "SSD",
+      "label": "256 GB SSD",
+      "explanation": "Disco de estado sólido: el portátil enciende en segundos y abre tus aplicaciones al instante."
+    },
+    "tier": {
+      "id": "work",
+      "label": "Multitarea y Trabajo Fluido",
+      "icon": "Briefcase",
+      "shortDescription": "Excelente para profesionales, teletrabajo, administración y personas que necesitan rapidez en el día a día.",
+      "badgeBg": "bg-emerald-100 text-emerald-800 border-emerald-200",
+      "badgeText": "Multitarea y Trabajo Fluido",
+      "recommendedFor": [
+        "Trabajo remoto y llamadas de Meet / Teams sin cortes",
+        "Tener 30 pestañas abiertas mientras escuchas música",
+        "Facturación, software contable, bases de datos y CRM",
+        "Creación de contenido para redes en Canva"
+      ],
+      "idealUser": "Profesionales independientes, comerciantes, oficinistas y estudiantes que buscan rapidez y longevidad."
+    },
+    "condition": "Nuevo",
+    "freeShipping": true,
+    "installments": "Hasta 12 cuotas sin interés con bancos aliados",
+    "seller": "DELL PARTNER COLOMBIA",
+    "screenSize": "15.6\"",
+    "updatedAt": "2026-11-15T06:01:58.205Z",
+    "precioCOPFormateado": "$ 3.268.563",
+    "priceSyncedAt": "2026-11-15T06:01:58.205Z"
+  },
+  {
+    "id": "MCOU5731713092",
+    "nombre": "Portátil Gamer Acer Nitro V 16 AI AMD Ryzen 5 240 16GB RAM 512GB SSD RTX 5050",
+    "precioCOP": 4850000,
+    "enlace": "https://www.mercadolibre.com.co/portatil-gamer-acer-nitro-v-16-ai-ryzen-5-240--rtx-5050/up/MCOU5731713092",
+    "imagen": "https://http2.mlstatic.com/D_639593-CBT115807164694_092026-O.webp",
+    "title": "Portátil Gamer Acer Nitro V 16 AI AMD Ryzen 5 240 16GB RAM 512GB SSD RTX 5050",
+    "price": 4850000,
+    "url": "https://www.mercadolibre.com.co/portatil-gamer-acer-nitro-v-16-ai-ryzen-5-240--rtx-5050/up/MCOU5731713092",
+    "affiliateUrl": "https://meli.la/1mXh2tB",
+    "imageUrl": "https://http2.mlstatic.com/D_639593-CBT115807164694_092026-O.webp",
+    "brand": "Acer",
+    "processor": {
+      "raw": "AMD Ryzen 5",
+      "family": "Ryzen 5",
+      "tierScore": 3,
+      "humanDescription": "Excelente rendimiento para estudiar, programar, trabajar y videollamadas fluidas."
+    },
+    "ram": {
+      "sizeGB": 16,
+      "label": "16 GB RAM",
+      "explanation": "Avanzada: permite tener decenas de pestañas, Canva y programas pesados sin frenarse."
+    },
+    "storage": {
+      "sizeGB": 512,
+      "type": "SSD",
+      "label": "512 GB SSD",
+      "explanation": "Disco SSD ultraveloz: espacio amplio para miles de fotos, videos y arranque en 8 segundos."
+    },
+    "tier": {
+      "id": "pro",
+      "label": "Alto Rendimiento / Gaming / Diseño",
+      "icon": "Gamepad2",
+      "shortDescription": "Ideal para personas creativas, diseñadores gráficos, ingenieros o entusiastas de los videojuegos.",
+      "badgeBg": "bg-purple-100 text-purple-800 border-purple-200",
+      "badgeText": "Alto Rendimiento / Gaming",
+      "recommendedFor": [
+        "Diseño gráfico (Photoshop, Illustrator, Premiere)",
+        "Edición de video 4K y producción musical",
+        "Videojuegos modernos y modelado en 3D",
+        "Programación avanzada y máquinas virtuales"
+      ],
+      "idealUser": "Creadores de contenido, gamers, ingenieros y usuarios exigentes que no quieren limitaciones."
+    },
+    "condition": "Nuevo",
+    "freeShipping": true,
+    "installments": "Hasta 12 cuotas sin interés con bancos aliados",
+    "seller": "ACER TIENDA OFICIAL",
+    "screenSize": "16\"",
+    "updatedAt": "2026-11-15T06:01:58.205Z",
+    "precioCOPFormateado": "$ 4.850.000",
+    "priceSyncedAt": "2026-11-15T06:01:58.205Z"
+  }
+]

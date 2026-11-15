@@ -1,0 +1,93 @@
+{
+  "lastSyncedAt": "2026-11-15T06:01:58.205Z",
+  "mode": "playwright-persistent",
+  "updatedCount": 16,
+  "failedCount": 7,
+  "antiBotBlockedCount": 1,
+  "totalCount": 23,
+  "authTokenConfigured": false,
+  "notFoundIds": [
+    "MCO41209434",
+    "MCO28769789",
+    "MCO66110105",
+    "MCOU3212958128",
+    "MCOU3090447988",
+    "MCOU3926527320"
+  ],
+  "failures": [
+    {
+      "id": "MCO41209434",
+      "permalink": "https://www.mercadolibre.com.co/asus-x1504za-nj-portatil-vivobook-core-i3-1215u-ram-12gb-ssd-512gb-fhd-color-gris/p/MCO41209434",
+      "status": 200,
+      "error": "No se detectó precio en el navegador (not-found)"
+    },
+    {
+      "id": "MCO28769789",
+      "permalink": "https://www.mercadolibre.com.co/portatil-gamer-lenovo-loq-loq-gamer-gris-oscura-156-amd-ryzen-7-7840hs-8gb-de-ram-512gb-ssd-nvidia-geforce-rtx-4050-6gb-gddr6-1920x1080px-windows-11-home/p/MCO28769789",
+      "status": 200,
+      "error": "No se detectó precio en el navegador (not-found)"
+    },
+    {
+      "id": "MCO66110105",
+      "permalink": "https://www.mercadolibre.com.co/hp-victus-15-fa2082wm-156-16gb-512gb-ssd-w11-plata-mica-plateado/p/MCO66110105",
+      "status": 200,
+      "error": "No se detectó precio en el navegador (not-found)"
+    },
+    {
+      "id": "MCO2143743897",
+      "permalink": "https://articulo.mercadolibre.com.co/MCO-2143743897-portatil-hp-pavilion-gaming-15-ryzen-5-gtx-1650-8gb-512gb-_JM",
+      "status": 200,
+      "error": "Tiempo de espera (60s) agotado en verificación / inicio de sesión (/gz/account-verification)"
+    },
+    {
+      "id": "MCOU3212958128",
+      "permalink": "https://www.mercadolibre.com.co/lenovo-ideapad-slim-3-i3-156--8gb-512gb-ssd-azul-claro/up/MCOU3212958128",
+      "status": 200,
+      "error": "No se detectó precio en el navegador (not-found)"
+    },
+    {
+      "id": "MCOU3090447988",
+      "permalink": "https://www.mercadolibre.com.co/lenovo-ideapad-slim-3-15ian8-82xb0031lm/up/MCOU3090447988",
+      "status": 200,
+      "error": "No se detectó precio en el navegador (not-found)"
+    },
+    {
+      "id": "MCOU3926527320",
+      "permalink": "https://www.mercadolibre.com.co/macbook-air-m2-8gb-ram--256gb-ssd-m2-a2681-gris-espacial/up/MCOU3926527320",
+      "status": 200,
+      "error": "No se detectó precio en el navegador (not-found)"
+    }
+  ],
+  "sampleFailures": [
+    {
+      "id": "MCO41209434",
+      "permalink": "https://www.mercadolibre.com.co/asus-x1504za-nj-portatil-vivobook-core-i3-1215u-ram-12gb-ssd-512gb-fhd-color-gris/p/MCO41209434",
+      "status": 200,
+      "error": "No se detectó precio en el navegador (not-found)"
+    },
+    {
+      "id": "MCO28769789",
+      "permalink": "https://www.mercadolibre.com.co/portatil-gamer-lenovo-loq-loq-gamer-gris-oscura-156-amd-ryzen-7-7840hs-8gb-de-ram-512gb-ssd-nvidia-geforce-rtx-4050-6gb-gddr6-1920x1080px-windows-11-home/p/MCO28769789",
+      "status": 200,
+      "error": "No se detectó precio en el navegador (not-found)"
+    },
+    {
+      "id": "MCO66110105",
+      "permalink": "https://www.mercadolibre.com.co/hp-victus-15-fa2082wm-156-16gb-512gb-ssd-w11-plata-mica-plateado/p/MCO66110105",
+      "status": 200,
+      "error": "No se detectó precio en el navegador (not-found)"
+    },
+    {
+      "id": "MCO2143743897",
+      "permalink": "https://articulo.mercadolibre.com.co/MCO-2143743897-portatil-hp-pavilion-gaming-15-ryzen-5-gtx-1650-8gb-512gb-_JM",
+      "status": 200,
+      "error": "Tiempo de espera (60s) agotado en verificación / inicio de sesión (/gz/account-verification)"
+    },
+    {
+      "id": "MCOU3212958128",
+      "permalink": "https://www.mercadolibre.com.co/lenovo-ideapad-slim-3-i3-156--8gb-512gb-ssd-azul-claro/up/MCOU3212958128",
+      "status": 200,
+      "error": "No se detectó precio en el navegador (not-found)"
+    }
+  ]
+}
