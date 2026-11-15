@@ -1,7 +1,6 @@
 import React from 'react';
-import { Filter, RotateCcw, Check, ArrowDownUp, DollarSign, Tag } from 'lucide-react';
-import { FilterState, UsageTierId } from '../types/laptop';
-import { formatCOP } from '../utils/formatters';
+import { RotateCcw, ChevronDown, BadgeCheck, Truck } from 'lucide-react';
+import { FilterState } from '../types/laptop';
 
 interface FilterBarProps {
   filters: FilterState;
@@ -37,175 +36,140 @@ export const FilterBar: React.FC<FilterBarProps> = ({
     filters.minRam > 0 ||
     filters.searchQuery !== '';
 
+  const budgetOptions: Array<{ value: FilterState['budgetRange']; label: string }> = [
+    { value: 'all', label: 'Todos' },
+    { value: 'under-1.5m', label: 'Menos de $1.5M' },
+    { value: '1.5m-2.5m', label: '$1.5M - $2.5M' },
+    { value: 'over-2.5m', label: 'Más de $2.5M' }
+  ];
+
   return (
-    <div className="bg-white rounded-2xl border border-slate-200/90 p-4 sm:p-5 shadow-xs mb-8">
-      {/* Top Header inside filter box */}
-      <div className="flex flex-wrap items-center justify-between gap-3 pb-4 border-b border-slate-100">
-        <div className="flex items-center gap-2">
-          <div className="p-1.5 rounded-lg bg-brand-50 text-brand-600">
-            <Filter className="w-4 h-4" />
+    <section
+      id="catalogo"
+      className="w-full bg-surface-container-lowest rounded-xl border border-outline-variant/40 shadow-sm mb-6"
+    >
+      <div className="px-4 sm:px-5 py-3.5 flex flex-col gap-3">
+        {/* Top Row: Budget Chips + Sort */}
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          {/* Budget Chips */}
+          <div className="flex items-center gap-1.5 overflow-x-auto pb-1 sm:pb-0 scrollbar-none">
+            <span className="text-[11px] font-semibold text-on-surface-variant shrink-0 mr-1 hidden sm:inline">
+              Presupuesto COP:
+            </span>
+            {budgetOptions.map((option) => {
+              const active = filters.budgetRange === option.value;
+              return (
+                <button
+                  key={option.value}
+                  type="button"
+                  onClick={() => onFilterChange({ budgetRange: option.value })}
+                  className={`px-3 py-1.5 rounded-full text-xs font-semibold shrink-0 transition-all ${
+                    active
+                      ? 'bg-primary-container text-on-primary shadow-xs'
+                      : 'bg-surface-container hover:bg-surface-container-high text-on-surface'
+                  }`}
+                >
+                  {option.label}
+                </button>
+              );
+            })}
           </div>
-          <span className="text-sm font-bold text-slate-800">Filtros inteligentes</span>
-          <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-slate-100 text-slate-600">
-            {totalResults} {totalResults === 1 ? 'portátil' : 'portátiles'}
-          </span>
-        </div>
 
-        {/* Sort and Reset */}
-        <div className="flex items-center gap-3">
-          <div className="flex items-center gap-1.5 text-xs text-slate-500">
-            <ArrowDownUp className="w-3.5 h-3.5" />
-            <span className="hidden sm:inline">Ordenar:</span>
-            <select
-              value={filters.sortBy}
-              onChange={(e) => onFilterChange({ sortBy: e.target.value as FilterState['sortBy'] })}
-              className="text-xs font-semibold bg-slate-50 border border-slate-200 rounded-lg px-2.5 py-1.5 text-slate-700 focus:outline-none focus:ring-2 focus:ring-brand-500 cursor-pointer"
+          {/* Sort Selector */}
+          <div className="flex items-center gap-2 shrink-0">
+            <label
+              htmlFor="sortSelector"
+              className="text-[11px] font-semibold text-on-surface-variant hidden md:inline"
             >
-              <option value="relevance">Recomendados</option>
-              <option value="price-asc">Menor precio</option>
-              <option value="price-desc">Mayor precio</option>
-              <option value="ram-desc">Más memoria RAM</option>
-            </select>
-          </div>
-
-          {isFiltered && (
-            <button
-              onClick={onResetFilters}
-              className="inline-flex items-center gap-1 text-xs text-rose-600 hover:text-rose-700 font-semibold px-2.5 py-1.5 rounded-lg hover:bg-rose-50 transition-colors"
-            >
-              <RotateCcw className="w-3 h-3" />
-              <span>Limpiar filtros</span>
-            </button>
-          )}
-        </div>
-      </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-5 pt-4">
-        {/* 1. Perfil de Uso Buttons */}
-        <div className="md:col-span-12 lg:col-span-5">
-          <label className="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">
-            Perfil de uso
-          </label>
-          <div className="flex flex-wrap gap-2">
-            <button
-              onClick={() => onFilterChange({ tier: 'all' })}
-              className={`px-3 py-1.5 rounded-xl text-xs font-medium transition-all ${
-                filters.tier === 'all'
-                  ? 'bg-slate-900 text-white shadow-xs'
-                  : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
-              }`}
-            >
-              Todos los perfiles
-            </button>
-            <button
-              onClick={() => onFilterChange({ tier: 'basic' })}
-              className={`px-3 py-1.5 rounded-xl text-xs font-medium transition-all ${
-                filters.tier === 'basic'
-                  ? 'bg-sky-600 text-white shadow-xs'
-                  : 'bg-sky-50 text-sky-800 hover:bg-sky-100 border border-sky-200'
-              }`}
-            >
-              📚 Estudio y Oficina Básica
-            </button>
-            <button
-              onClick={() => onFilterChange({ tier: 'work' })}
-              className={`px-3 py-1.5 rounded-xl text-xs font-medium transition-all ${
-                filters.tier === 'work'
-                  ? 'bg-emerald-600 text-white shadow-xs'
-                  : 'bg-emerald-50 text-emerald-800 hover:bg-emerald-100 border border-emerald-200'
-              }`}
-            >
-              💼 Multitarea y Trabajo Fluido
-            </button>
-            <button
-              onClick={() => onFilterChange({ tier: 'pro' })}
-              className={`px-3 py-1.5 rounded-xl text-xs font-medium transition-all ${
-                filters.tier === 'pro'
-                  ? 'bg-purple-600 text-white shadow-xs'
-                  : 'bg-purple-50 text-purple-800 hover:bg-purple-100 border border-purple-200'
-              }`}
-            >
-              🎮 Alto Rendimiento / Gaming
-            </button>
+              Ordenar por:
+            </label>
+            <div className="relative">
+              <select
+                id="sortSelector"
+                value={filters.sortBy}
+                onChange={(e) => onFilterChange({ sortBy: e.target.value as FilterState['sortBy'] })}
+                className="h-9 pl-3 pr-8 rounded-lg bg-surface-container text-on-surface text-xs font-semibold focus:outline-none focus:ring-1 focus:ring-primary-container appearance-none cursor-pointer"
+              >
+                <option value="relevance">Recomendados</option>
+                <option value="price-asc">Menor precio</option>
+                <option value="price-desc">Mayor precio</option>
+                <option value="ram-desc">Mayor memoria RAM</option>
+              </select>
+              <ChevronDown className="w-4 h-4 text-outline absolute right-2.5 top-2.5 pointer-events-none" />
+            </div>
           </div>
         </div>
 
-        {/* 2. Presupuesto en COP */}
-        <div className="md:col-span-6 lg:col-span-4">
-          <label className="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">
-            Presupuesto (Pesos Colombianos)
-          </label>
-          <div className="flex flex-wrap gap-2">
+        {/* Second Row: Brand Pills + Quick Toggles */}
+        <div className="flex flex-wrap items-center justify-between gap-3 pt-2 border-t border-outline-variant/20">
+          {/* Brands */}
+          <div className="flex items-center gap-1.5 overflow-x-auto pb-1 sm:pb-0 scrollbar-none">
+            <span className="text-[11px] font-semibold text-on-surface-variant shrink-0 mr-1 hidden lg:inline">
+              Marca:
+            </span>
             <button
-              onClick={() => onFilterChange({ budgetRange: 'all' })}
-              className={`px-3 py-1.5 rounded-xl text-xs font-medium transition-all ${
-                filters.budgetRange === 'all'
-                  ? 'bg-slate-900 text-white shadow-xs'
-                  : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
+              type="button"
+              onClick={() => onFilterChange({ brands: [] })}
+              className={`px-2.5 py-1 rounded-full text-xs shrink-0 transition-all ${
+                filters.brands.length === 0
+                  ? 'bg-surface-container-high text-primary font-bold'
+                  : 'bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-medium'
               }`}
             >
-              Cualquier valor
+              Todas ({totalResults})
             </button>
-            <button
-              onClick={() => onFilterChange({ budgetRange: 'under-1.5m' })}
-              className={`px-3 py-1.5 rounded-xl text-xs font-medium transition-all ${
-                filters.budgetRange === 'under-1.5m'
-                  ? 'bg-brand-600 text-white shadow-xs'
-                  : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
-              }`}
-            >
-              Menos de $1.5M
-            </button>
-            <button
-              onClick={() => onFilterChange({ budgetRange: '1.5m-2.5m' })}
-              className={`px-3 py-1.5 rounded-xl text-xs font-medium transition-all ${
-                filters.budgetRange === '1.5m-2.5m'
-                  ? 'bg-brand-600 text-white shadow-xs'
-                  : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
-              }`}
-            >
-              $1.5M - $2.5M
-            </button>
-            <button
-              onClick={() => onFilterChange({ budgetRange: 'over-2.5m' })}
-              className={`px-3 py-1.5 rounded-xl text-xs font-medium transition-all ${
-                filters.budgetRange === 'over-2.5m'
-                  ? 'bg-brand-600 text-white shadow-xs'
-                  : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
-              }`}
-            >
-              Más de $2.5M
-            </button>
-          </div>
-        </div>
-
-        {/* 3. Marcas Disponibles */}
-        <div className="md:col-span-6 lg:col-span-3">
-          <label className="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">
-            Marcas
-          </label>
-          <div className="flex flex-wrap gap-1.5">
             {availableBrands.map((brand) => {
               const isSelected = filters.brands.includes(brand);
               return (
                 <button
                   key={brand}
+                  type="button"
                   onClick={() => toggleBrand(brand)}
-                  className={`inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-medium transition-all ${
+                  className={`px-2.5 py-1 rounded-full text-xs shrink-0 transition-all ${
                     isSelected
-                      ? 'bg-brand-600 text-white shadow-xs'
-                      : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+                      ? 'bg-primary-container text-on-primary font-bold shadow-xs'
+                      : 'bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-medium'
                   }`}
                 >
-                  {isSelected && <Check className="w-3 h-3 stroke-[3]" />}
-                  <span>{brand}</span>
+                  {brand}
                 </button>
               );
             })}
           </div>
+
+          {/* Quick Toggles & Reset */}
+          <div className="flex items-center gap-2 flex-wrap">
+            <span className="px-2.5 py-1 rounded-lg bg-secondary-fixed/40 text-secondary text-[11px] font-semibold flex items-center gap-1">
+              <BadgeCheck className="w-3.5 h-3.5" />
+              <span>Tiendas Oficiales</span>
+            </span>
+
+            <button
+              type="button"
+              onClick={() => onFilterChange({ onlyFreeShipping: !filters.onlyFreeShipping })}
+              className={`px-2.5 py-1 rounded-lg text-[11px] font-semibold flex items-center gap-1 transition-all ${
+                filters.onlyFreeShipping
+                  ? 'bg-secondary text-on-secondary shadow-xs'
+                  : 'bg-surface-container-low text-on-surface-variant hover:bg-surface-container'
+              }`}
+            >
+              <Truck className="w-3.5 h-3.5" />
+              <span>Envío Gratis</span>
+            </button>
+
+            {isFiltered && (
+              <button
+                type="button"
+                onClick={onResetFilters}
+                className="inline-flex items-center gap-1 text-[11px] text-tertiary font-bold px-2.5 py-1 rounded-lg bg-error-container/60 hover:bg-error-container transition-colors"
+              >
+                <RotateCcw className="w-3 h-3" />
+                <span>Limpiar filtros</span>
+              </button>
+            )}
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
-
