@@ -12,6 +12,7 @@
     "update:prices": "node backend/updatePrices.js"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "axios": "^1.7.9",
     "cheerio": "^1.0.0",
     "lucide-react": "^0.475.0",
