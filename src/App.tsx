@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import rawLaptops from './data/portatiles.json';
 import rawPriceSync from './data/price-sync.json';
 import { Laptop, FilterState } from './types/laptop';
@@ -39,6 +39,24 @@ interface PriceSyncReport {
   sampleFailures?: PriceSyncFailure[];
 }
 
+interface ApiPriceItem {
+  id: string;
+  price?: number;
+  precioCOP?: number;
+  precioCOPFormateado?: string;
+  originalPrice?: number;
+  discountPercentage?: number;
+  freeShipping?: boolean;
+  installments?: string;
+  priceSyncedAt?: string;
+}
+
+interface ApiPricesResponse {
+  ok?: boolean;
+  lastSyncedAt?: string;
+  items?: ApiPriceItem[];
+}
+
 /**
  * Extracts laptop IDs marked as `not-found` in price-sync.json so out-of-stock
  * or paused Mercado Libre publications stay hidden from the catalog UI.
@@ -61,13 +79,85 @@ function getNotFoundLaptopIds(syncReport: PriceSyncReport): Set<string> {
 
 const PRICE_SYNC_REPORT = rawPriceSync as PriceSyncReport;
 const NOT_FOUND_IDS = getNotFoundLaptopIds(PRICE_SYNC_REPORT);
+const INITIAL_ACTIVE_LAPTOPS: Laptop[] = (rawLaptops as Laptop[]).filter(
+  (item) => !NOT_FOUND_IDS.has(item.id)
+);
 
 export const App: React.FC = () => {
-  // Master active laptops list: exclude items whose status in price-sync.json is not-found
-  const laptops: Laptop[] = useMemo(
-    () => (rawLaptops as Laptop[]).filter((item) => !NOT_FOUND_IDS.has(item.id)),
-    []
+  // Master active laptops list initialized immediately from bundled JSON
+  const [laptops, setLaptops] = useState<Laptop[]>(INITIAL_ACTIVE_LAPTOPS);
+  const [lastSyncedAt, setLastSyncedAt] = useState<string | undefined>(
+    PRICE_SYNC_REPORT.lastSyncedAt
   );
+
+  // Silent background refresh from /api/prices (falls back seamlessly to bundled JSON)
+  useEffect(() => {
+    let cancelled = false;
+
+    async function refreshPricesSilently() {
+      try {
+        const res = await fetch('/api/prices');
+        const contentType = res.headers.get('content-type') || '';
+        if (!res.ok || !contentType.includes('application/json')) return;
+
+        const data = (await res.json()) as ApiPricesResponse;
+        if (cancelled || !data?.ok || !Array.isArray(data.items) || data.items.length === 0) {
+          return;
+        }
+
+        const updatesById = new Map(data.items.map((entry) => [entry.id, entry]));
+
+        setLaptops((prev) =>
+          prev.map((item) => {
+            const live = updatesById.get(item.id);
+            if (!live) return item;
+
+            const nextPrice = live.precioCOP ?? live.price ?? item.precioCOP ?? item.price;
+            const hasValidDiscount =
+              typeof live.originalPrice === 'number' && live.originalPrice > nextPrice;
+
+            const merged: Laptop = {
+              ...item,
+              price: nextPrice,
+              precioCOP: nextPrice,
+              precioCOPFormateado: live.precioCOPFormateado ?? item.precioCOPFormateado,
+              freeShipping:
+                typeof live.freeShipping === 'boolean' ? live.freeShipping : item.freeShipping,
+              installments: live.installments ?? item.installments,
+              priceSyncedAt: live.priceSyncedAt ?? item.priceSyncedAt,
+              // Explicitly preserve affiliateUrl, tier, and processor
+              affiliateUrl: item.affiliateUrl,
+              tier: item.tier,
+              processor: item.processor
+            };
+
+            if (hasValidDiscount) {
+              merged.originalPrice = live.originalPrice;
+              merged.discountPercentage =
+                live.discountPercentage ??
+                Math.round(((live.originalPrice! - nextPrice) / live.originalPrice!) * 100);
+            } else {
+              delete merged.originalPrice;
+              delete merged.discountPercentage;
+            }
+
+            return merged;
+          })
+        );
+
+        if (data.lastSyncedAt) {
+          setLastSyncedAt(data.lastSyncedAt);
+        }
+      } catch {
+        // Silent fallback: bundled JSON data remains active without user-facing errors
+      }
+    }
+
+    refreshPricesSilently();
+    return () => {
+      cancelled = true;
+    };
+  }, []);
 
   // Filter state
   const [filters, setFilters] = useState<FilterState>({
@@ -78,6 +168,7 @@ export const App: React.FC = () => {
     brands: [],
     minRam: 0,
     onlyFreeShipping: false,
+    onlyOfficialStores: false,
     sortBy: 'relevance'
   });
 
@@ -112,6 +203,7 @@ export const App: React.FC = () => {
       brands: [],
       minRam: 0,
       onlyFreeShipping: false,
+      onlyOfficialStores: false,
       sortBy: 'relevance'
     });
   };
@@ -139,6 +231,8 @@ export const App: React.FC = () => {
   const filteredLaptops = useMemo(() => {
     return laptops
       .filter((laptop) => {
+        const activePrice = laptop.precioCOP ?? laptop.price;
+
         // 1. Search Query
         if (filters.searchQuery.trim()) {
           const query = filters.searchQuery.toLowerCase();
@@ -153,10 +247,15 @@ export const App: React.FC = () => {
           return false;
         }
 
-        // 3. Budget Range
-        if (filters.budgetRange === 'under-1.5m' && laptop.price >= 1500000) return false;
-        if (filters.budgetRange === '1.5m-2.5m' && (laptop.price < 1500000 || laptop.price > 2500000)) return false;
-        if (filters.budgetRange === 'over-2.5m' && laptop.price <= 2500000) return false;
+        // 3. Budget Range (aligned to real Colombia catalog pricing)
+        if (filters.budgetRange === 'under-2m' && activePrice >= 2000000) return false;
+        if (
+          filters.budgetRange === '2m-3.2m' &&
+          (activePrice < 2000000 || activePrice > 3200000)
+        ) {
+          return false;
+        }
+        if (filters.budgetRange === 'over-3.2m' && activePrice <= 3200000) return false;
 
         // 4. Brands
         if (filters.brands.length > 0 && !filters.brands.includes(laptop.brand)) {
@@ -168,7 +267,12 @@ export const App: React.FC = () => {
           return false;
         }
 
-        // 6. Free Shipping
+        // 6. Official Store badge filter
+        if (filters.onlyOfficialStores && !/tienda\s+oficial/i.test(laptop.seller || '')) {
+          return false;
+        }
+
+        // 7. Free Shipping
         if (filters.onlyFreeShipping && !laptop.freeShipping) {
           return false;
         }
@@ -176,8 +280,10 @@ export const App: React.FC = () => {
         return true;
       })
       .sort((a, b) => {
-        if (filters.sortBy === 'price-asc') return a.price - b.price;
-        if (filters.sortBy === 'price-desc') return b.price - a.price;
+        const priceA = a.precioCOP ?? a.price;
+        const priceB = b.precioCOP ?? b.price;
+        if (filters.sortBy === 'price-asc') return priceA - priceB;
+        if (filters.sortBy === 'price-desc') return priceB - priceA;
         if (filters.sortBy === 'ram-desc') return b.ram.sizeGB - a.ram.sizeGB;
         return 0; // relevance / natural order
       });
@@ -195,6 +301,9 @@ export const App: React.FC = () => {
         searchQuery={filters.searchQuery}
         onSearchChange={(query) => handleFilterChange({ searchQuery: query })}
         onResetAll={handleResetFilters}
+        onSelectOfficialStores={() =>
+          handleFilterChange({ onlyOfficialStores: !filters.onlyOfficialStores })
+        }
       />
 
       {/* Hero Section with Top Stats Strip & 3 Quick Profile Cards */}
@@ -204,7 +313,7 @@ export const App: React.FC = () => {
         onSelectTier={(tier) => handleFilterChange({ tier })}
         searchQuery={filters.searchQuery}
         onSearchChange={(query) => handleFilterChange({ searchQuery: query })}
-        lastSyncedAt={PRICE_SYNC_REPORT.lastSyncedAt}
+        lastSyncedAt={lastSyncedAt}
       />
 
       {/* Main Catalog Section */}
@@ -220,6 +329,7 @@ export const App: React.FC = () => {
           onResetFilters={handleResetFilters}
           availableBrands={availableBrands}
           totalResults={filteredLaptops.length}
+          totalCatalogCount={laptops.length}
         />
 
         {/* Product Count Strip */}
@@ -283,7 +393,7 @@ export const App: React.FC = () => {
         {/* Trust & Verification Assurance Banner */}
         <section
           id="confianza"
-          className="mt-10 p-5 bg-surface-container-low rounded-xl border border-outline-variant/30 flex flex-col md:flex-row items-center justify-between gap-4"
+          className="scroll-mt-32 mt-10 p-5 bg-surface-container-low rounded-xl border border-outline-variant/30 flex flex-col md:flex-row items-center justify-between gap-4"
         >
           <div className="flex items-center gap-4">
             <div className="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary shrink-0">

@@ -36,6 +36,7 @@ export interface Laptop {
   nombre?: string;
   title: string;
   precioCOP?: number;
+  precioCOPFormateado?: string;
   price: number;
   enlace?: string;
   permalink?: string;
@@ -64,11 +65,12 @@ export interface Laptop {
 export interface FilterState {
   searchQuery: string;
   tier: UsageTierId | 'all';
-  budgetRange: 'all' | 'under-1.5m' | '1.5m-2.5m' | 'over-2.5m';
+  budgetRange: 'all' | 'under-2m' | '2m-3.2m' | 'over-3.2m';
   customMaxPrice: number;
   brands: string[];
   minRam: number;
   onlyFreeShipping: boolean;
+  onlyOfficialStores: boolean;
   sortBy: 'relevance' | 'price-asc' | 'price-desc' | 'ram-desc' | 'value';
 }
 

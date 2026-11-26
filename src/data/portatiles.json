@@ -29,28 +29,28 @@
       "explanation": "Disco SSD ultraveloz: espacio amplio para miles de fotos, videos y arranque en 8 segundos."
     },
     "tier": {
-      "id": "pro",
-      "label": "Alto Rendimiento / Gaming / Diseño",
-      "icon": "Gamepad2",
-      "shortDescription": "Ideal para personas creativas, diseñadores gráficos, ingenieros o entusiastas de los videojuegos.",
-      "badgeBg": "bg-purple-100 text-purple-800 border-purple-200",
-      "badgeText": "Alto Rendimiento / Gaming",
+      "id": "work",
+      "label": "Multitarea y Trabajo Fluido",
+      "icon": "Briefcase",
+      "shortDescription": "Excelente para profesionales, teletrabajo, administración y personas que necesitan rapidez en el día a día.",
+      "badgeBg": "bg-emerald-100 text-emerald-800 border-emerald-200",
+      "badgeText": "Multitarea y Trabajo Fluido",
       "recommendedFor": [
-        "Diseño gráfico (Photoshop, Illustrator, Premiere)",
-        "Edición de video 4K y producción musical",
-        "Videojuegos modernos y modelado en 3D",
-        "Programación avanzada y máquinas virtuales"
+        "Trabajo remoto y llamadas de Meet / Teams sin cortes",
+        "Tener 30 pestañas abiertas mientras escuchas música",
+        "Facturación, software contable, bases de datos y CRM",
+        "Creación de contenido para redes en Canva"
       ],
-      "idealUser": "Creadores de contenido, gamers, ingenieros y usuarios exigentes que no quieren limitaciones."
+      "idealUser": "Profesionales independientes, comerciantes, oficinistas y estudiantes que buscan rapidez y longevidad."
     },
     "condition": "Nuevo",
-    "freeShipping": true,
-    "installments": "Hasta 12 cuotas sin interés con bancos aliados",
+    "freeShipping": false,
+    "installments": "12 cuotas de $312.376 con 0% interés",
     "seller": "LENOVO TIENDA OFICIAL",
     "screenSize": "14\"",
     "updatedAt": "2026-11-15T06:01:58.205Z",
     "precioCOPFormateado": "$ 3.748.514",
-    "priceSyncedAt": "2026-11-15T06:01:58.205Z"
+    "priceSyncedAt": "2026-11-26T02:24:02.685Z"
   },
   {
     "id": "MCO27805439",
@@ -99,24 +99,22 @@
       "idealUser": "Estudiantes de colegio o universidad básica, adultos mayores y tareas sencillas del hogar."
     },
     "condition": "Nuevo",
-    "freeShipping": true,
-    "installments": "Hasta 12 cuotas sin interés con bancos aliados",
+    "freeShipping": false,
+    "installments": "12 cuotas de $177.833 con 0% interés",
     "seller": "LENOVO TIENDA OFICIAL",
     "screenSize": "14\"",
     "updatedAt": "2026-11-15T06:01:58.205Z",
     "precioCOPFormateado": "$ 2.133.999",
-    "priceSyncedAt": "2026-11-15T06:01:58.205Z"
+    "priceSyncedAt": "2026-11-26T02:24:02.685Z"
   },
   {
     "id": "MCO60708786",
     "nombre": "Notebook HP Victus 15-fa2082wm Intel Core i5 RTX 4050 16GB RAM 512GB SSD",
-    "precioCOP": 3699000,
+    "precioCOP": 4399000,
     "enlace": "https://www.mercadolibre.com.co/notebook-hp-victus-15-fa2082wm-con-intel-core-i5-rtx-4050-y-16-gb-de-ram/p/MCO60708786",
     "imagen": "https://http2.mlstatic.com/D_Q_NP_814195-MLA45745170541_042021-O.webp",
     "title": "Notebook HP Victus 15-fa2082wm Intel Core i5 RTX 4050 16GB RAM 512GB SSD",
-    "price": 3699000,
-    "originalPrice": 3899000,
-    "discountPercentage": 5,
+    "price": 4399000,
     "url": "https://www.mercadolibre.com.co/notebook-hp-victus-15-fa2082wm-con-intel-core-i5-rtx-4050-y-16-gb-de-ram/p/MCO60708786",
     "affiliateUrl": "https://meli.la/2XvsJPd",
     "imageUrl": "https://http2.mlstatic.com/D_Q_NP_814195-MLA45745170541_042021-O.webp",
@@ -154,24 +152,24 @@
       "idealUser": "Creadores de contenido, gamers, ingenieros y usuarios exigentes que no quieren limitaciones."
     },
     "condition": "Nuevo",
-    "freeShipping": true,
-    "installments": "Hasta 12 cuotas sin interés con bancos aliados",
+    "freeShipping": false,
+    "installments": "12 cuotas de $366.583 con 0% interés",
     "seller": "HP GAMING COLOMBIA",
     "screenSize": "15.6\"",
     "updatedAt": "2026-11-15T06:01:58.205Z",
-    "precioCOPFormateado": "$ 3.699.000",
-    "priceSyncedAt": "2026-11-15T06:01:58.205Z"
+    "precioCOPFormateado": "$ 4.399.000",
+    "priceSyncedAt": "2026-11-26T02:24:02.685Z"
   },
   {
     "id": "MCO2055841888",
     "nombre": "Portátil Acer Aspire Slim 15.6 FHD Intel Core 3 N355 8GB RAM 256GB SSD",
-    "precioCOP": 1731323,
+    "precioCOP": 1600756,
     "enlace": "https://www.mercadolibre.com.co/ordenador-portatil-acer-aspire-slim-156-fhd-intel-core-3-8/p/MCO2055841888",
     "imagen": "https://http2.mlstatic.com/D_Q_NP_804618-MLA45745035429_042021-O.webp",
     "title": "Portátil Acer Aspire Slim 15.6 FHD Intel Core 3 N355 8GB RAM 256GB SSD",
-    "price": 1731323,
-    "originalPrice": 2371693,
-    "discountPercentage": 27,
+    "price": 1600756,
+    "originalPrice": 2319896,
+    "discountPercentage": 31,
     "url": "https://www.mercadolibre.com.co/ordenador-portatil-acer-aspire-slim-156-fhd-intel-core-3-8/p/MCO2055841888",
     "affiliateUrl": "https://meli.la/2vZXStu",
     "imageUrl": "https://http2.mlstatic.com/D_Q_NP_804618-MLA45745035429_042021-O.webp",
@@ -209,13 +207,13 @@
       "idealUser": "Estudiantes de colegio o universidad básica, adultos mayores y tareas sencillas del hogar."
     },
     "condition": "Nuevo",
-    "freeShipping": true,
-    "installments": "Hasta 12 cuotas sin interés con bancos aliados",
+    "freeShipping": false,
+    "installments": "12 cuotas de $133.396 con 0% interés",
     "seller": "ACER TIENDA OFICIAL",
     "screenSize": "15.6\"",
     "updatedAt": "2026-11-15T06:01:58.205Z",
-    "precioCOPFormateado": "$ 1.731.323",
-    "priceSyncedAt": "2026-11-15T06:01:58.205Z"
+    "precioCOPFormateado": "$ 1.600.756",
+    "priceSyncedAt": "2026-11-26T02:24:02.685Z"
   },
   {
     "id": "MCOU2491230500",
@@ -247,28 +245,28 @@
       "explanation": "Disco SSD ultraveloz: espacio amplio para miles de fotos, videos y arranque en 8 segundos."
     },
     "tier": {
-      "id": "pro",
-      "label": "Alto Rendimiento / Gaming / Diseño",
-      "icon": "Gamepad2",
-      "shortDescription": "Ideal para personas creativas, diseñadores gráficos, ingenieros o entusiastas de los videojuegos.",
-      "badgeBg": "bg-purple-100 text-purple-800 border-purple-200",
-      "badgeText": "Alto Rendimiento / Gaming",
+      "id": "work",
+      "label": "Multitarea y Trabajo Fluido",
+      "icon": "Briefcase",
+      "shortDescription": "Excelente para profesionales, teletrabajo, administración y personas que necesitan rapidez en el día a día.",
+      "badgeBg": "bg-emerald-100 text-emerald-800 border-emerald-200",
+      "badgeText": "Multitarea y Trabajo Fluido",
       "recommendedFor": [
-        "Diseño gráfico (Photoshop, Illustrator, Premiere)",
-        "Edición de video 4K y producción musical",
-        "Videojuegos modernos y modelado en 3D",
-        "Programación avanzada y máquinas virtuales"
+        "Trabajo remoto y llamadas de Meet / Teams sin cortes",
+        "Tener 30 pestañas abiertas mientras escuchas música",
+        "Facturación, software contable, bases de datos y CRM",
+        "Creación de contenido para redes en Canva"
       ],
-      "idealUser": "Creadores de contenido, gamers, ingenieros y usuarios exigentes que no quieren limitaciones."
+      "idealUser": "Profesionales independientes, comerciantes, oficinistas y estudiantes que buscan rapidez y longevidad."
     },
     "condition": "Nuevo",
-    "freeShipping": true,
-    "installments": "Hasta 12 cuotas sin interés con bancos aliados",
+    "freeShipping": false,
+    "installments": "12 cuotas de $233.325 con 0% interés",
     "seller": "HP PARTNER COLOMBIA",
     "screenSize": "15.6\"",
     "updatedAt": "2026-11-15T06:01:58.205Z",
     "precioCOPFormateado": "$ 2.799.900",
-    "priceSyncedAt": "2026-11-15T06:01:58.205Z"
+    "priceSyncedAt": "2026-11-26T02:24:02.685Z"
   },
   {
     "id": "MCO65384964",
@@ -315,22 +313,22 @@
       "idealUser": "Creadores de contenido, gamers, ingenieros y usuarios exigentes que no quieren limitaciones."
     },
     "condition": "Nuevo",
-    "freeShipping": true,
-    "installments": "Hasta 12 cuotas sin interés con bancos aliados",
+    "freeShipping": false,
+    "installments": "12 cuotas de $249.583 con 0% interés",
     "seller": "LENOVO TIENDA OFICIAL",
     "screenSize": "15.3\"",
     "updatedAt": "2026-11-15T06:01:58.205Z",
     "precioCOPFormateado": "$ 2.995.000",
-    "priceSyncedAt": "2026-11-15T06:01:58.205Z"
+    "priceSyncedAt": "2026-11-26T02:24:02.685Z"
   },
   {
     "id": "MCO65915099",
     "nombre": "Notebook Lenovo IdeaPad Slim 3 15ARP10 Ryzen 7 7735HS 24GB DDR5 512GB SSD NVMe 15.3 IPS",
-    "precioCOP": 3050000,
+    "precioCOP": 3569900,
     "enlace": "https://www.mercadolibre.com.co/notebook-lenovo-ideapad-slim-3-15arp10-ryzen-7-7735hs-24gb-ddr5-512gb-ssd-nvme-153-wuxga-ips-1920x1200-wifi-6-camara-ir-teclado-espanol/p/MCO65915099",
     "imagen": "https://http2.mlstatic.com/D_NQ_NP_645272-MLU71430001106_092023-O.webp",
     "title": "Notebook Lenovo IdeaPad Slim 3 15ARP10 Ryzen 7 7735HS 24GB DDR5 512GB SSD NVMe 15.3 IPS",
-    "price": 3050000,
+    "price": 3569900,
     "url": "https://www.mercadolibre.com.co/notebook-lenovo-ideapad-slim-3-15arp10-ryzen-7-7735hs-24gb-ddr5-512gb-ssd-nvme-153-wuxga-ips-1920x1200-wifi-6-camara-ir-teclado-espanol/p/MCO65915099",
     "affiliateUrl": "https://meli.la/1nfjHnL",
     "imageUrl": "https://http2.mlstatic.com/D_NQ_NP_645272-MLU71430001106_092023-O.webp",
@@ -368,13 +366,13 @@
       "idealUser": "Creadores de contenido, gamers, ingenieros y usuarios exigentes que no quieren limitaciones."
     },
     "condition": "Nuevo",
-    "freeShipping": true,
-    "installments": "Hasta 12 cuotas sin interés con bancos aliados",
+    "freeShipping": false,
+    "installments": "12 cuotas de $297.492 con 0% interés",
     "seller": "LENOVO TIENDA OFICIAL",
     "screenSize": "15.3\"",
     "updatedAt": "2026-11-15T06:01:58.205Z",
-    "precioCOPFormateado": "$ 3.050.000",
-    "priceSyncedAt": "2026-11-15T06:01:58.205Z"
+    "precioCOPFormateado": "$ 3.569.900",
+    "priceSyncedAt": "2026-11-26T02:24:02.685Z"
   },
   {
     "id": "MCO65444811",
@@ -408,39 +406,39 @@
       "explanation": "Disco SSD ultraveloz: espacio amplio para miles de fotos, videos y arranque en 8 segundos."
     },
     "tier": {
-      "id": "pro",
-      "label": "Alto Rendimiento / Gaming / Diseño",
-      "icon": "Gamepad2",
-      "shortDescription": "Ideal para personas creativas, diseñadores gráficos, ingenieros o entusiastas de los videojuegos.",
-      "badgeBg": "bg-purple-100 text-purple-800 border-purple-200",
-      "badgeText": "Alto Rendimiento / Gaming",
+      "id": "work",
+      "label": "Multitarea y Trabajo Fluido",
+      "icon": "Briefcase",
+      "shortDescription": "Excelente para profesionales, teletrabajo, administración y personas que necesitan rapidez en el día a día.",
+      "badgeBg": "bg-emerald-100 text-emerald-800 border-emerald-200",
+      "badgeText": "Multitarea y Trabajo Fluido",
       "recommendedFor": [
-        "Diseño gráfico (Photoshop, Illustrator, Premiere)",
-        "Edición de video 4K y producción musical",
-        "Videojuegos modernos y modelado en 3D",
-        "Programación avanzada y máquinas virtuales"
+        "Trabajo remoto y llamadas de Meet / Teams sin cortes",
+        "Tener 30 pestañas abiertas mientras escuchas música",
+        "Facturación, software contable, bases de datos y CRM",
+        "Creación de contenido para redes en Canva"
       ],
-      "idealUser": "Creadores de contenido, gamers, ingenieros y usuarios exigentes que no quieren limitaciones."
+      "idealUser": "Profesionales independientes, comerciantes, oficinistas y estudiantes que buscan rapidez y longevidad."
     },
     "condition": "Nuevo",
-    "freeShipping": true,
-    "installments": "Hasta 12 cuotas sin interés con bancos aliados",
+    "freeShipping": false,
+    "installments": "12 cuotas de $205.658 con 0% interés",
     "seller": "LENOVO TIENDA OFICIAL",
     "screenSize": "15.3\"",
     "updatedAt": "2026-11-15T06:01:58.205Z",
     "precioCOPFormateado": "$ 2.467.900",
-    "priceSyncedAt": "2026-11-15T06:01:58.205Z"
+    "priceSyncedAt": "2026-11-26T02:24:02.685Z"
   },
   {
     "id": "MCO51232872",
     "nombre": "Portátil Lenovo IdeaPad Slim 3 15IRH10 Intel Core i7-13620H 24GB 512GB SSD Windows 11 15.3",
-    "precioCOP": 2772000,
+    "precioCOP": 2675393,
     "enlace": "https://www.mercadolibre.com.co/portatil-lenovo-ideapad-slim-3-15irh10-intel-core-i7-13620h-24-gb-512-gb-ssd-windows-11-153-83ns0008br-luna-grey/p/MCO51232872",
     "imagen": "https://http2.mlstatic.com/D_NQ_NP_666648-MCO111513402025_052026-O.webp",
     "title": "Portátil Lenovo IdeaPad Slim 3 15IRH10 Intel Core i7-13620H 24GB 512GB SSD Windows 11 15.3",
-    "price": 2772000,
+    "price": 2675393,
     "originalPrice": 4281200,
-    "discountPercentage": 35,
+    "discountPercentage": 38,
     "url": "https://www.mercadolibre.com.co/portatil-lenovo-ideapad-slim-3-15irh10-intel-core-i7-13620h-24-gb-512-gb-ssd-windows-11-153-83ns0008br-luna-grey/p/MCO51232872",
     "affiliateUrl": "https://meli.la/1W5NaBa",
     "imageUrl": "https://http2.mlstatic.com/D_NQ_NP_666648-MCO111513402025_052026-O.webp",
@@ -478,13 +476,13 @@
       "idealUser": "Creadores de contenido, gamers, ingenieros y usuarios exigentes que no quieren limitaciones."
     },
     "condition": "Nuevo",
-    "freeShipping": true,
-    "installments": "Hasta 12 cuotas sin interés con bancos aliados",
+    "freeShipping": false,
+    "installments": "12 cuotas de $222.949 con 0% interés",
     "seller": "LENOVO TIENDA OFICIAL",
     "screenSize": "15.3\"",
     "updatedAt": "2026-11-15T06:01:58.205Z",
-    "precioCOPFormateado": "$ 2.772.000",
-    "priceSyncedAt": "2026-11-15T06:01:58.205Z"
+    "precioCOPFormateado": "$ 2.675.393",
+    "priceSyncedAt": "2026-11-26T02:24:02.685Z"
   },
   {
     "id": "MCOU5731713092",
@@ -542,19 +540,19 @@
   {
     "id": "MCO67634298",
     "nombre": "Lenovo Ideapad Slim 3 15irh10 I5-13420h 16gb 512gb Tactil Gris",
-    "precioCOP": 2119900,
+    "precioCOP": 2429900,
     "enlace": "https://www.mercadolibre.com.co/lenovo-ideapad-slim-3-15irh10-i5-13420h-16gb-512gb-tactil-gris/p/MCO67634298",
     "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_734199-MLA109232056998_042026-O.jpg",
     "title": "Lenovo Ideapad Slim 3 15irh10 I5-13420h 16gb 512gb Tactil Gris",
-    "price": 2119900,
+    "price": 2429900,
     "url": "https://www.mercadolibre.com.co/lenovo-ideapad-slim-3-15irh10-i5-13420h-16gb-512gb-tactil-gris/p/MCO67634298",
     "imageUrl": "https://http2.mlstatic.com/D_NQ_NP_2X_734199-MLA109232056998_042026-O.jpg",
     "brand": "Lenovo",
     "processor": {
-      "raw": "Apple M2",
-      "family": "Apple M2",
-      "tierScore": 4,
-      "humanDescription": "Súper fluido, silencioso y con excelente rendimiento para trabajo exigente."
+      "raw": "Intel Core i5-13420H",
+      "family": "Core i5",
+      "tierScore": 3,
+      "humanDescription": "El equilibrio perfecto entre rapidez y precio. Excelente para trabajar sin pausas."
     },
     "ram": {
       "sizeGB": 16,
@@ -568,48 +566,46 @@
       "explanation": "Disco SSD ultraveloz: espacio amplio para miles de fotos, videos y arranque en 8 segundos."
     },
     "tier": {
-      "id": "pro",
-      "label": "Alto Rendimiento / Gaming / Diseño",
-      "icon": "Gamepad2",
-      "shortDescription": "Ideal para personas creativas, diseñadores gráficos, ingenieros o entusiastas de los videojuegos.",
-      "badgeBg": "bg-purple-100 text-purple-800 border-purple-200",
-      "badgeText": "Alto Rendimiento / Gaming",
+      "id": "work",
+      "label": "Multitarea y Trabajo Fluido",
+      "icon": "Briefcase",
+      "shortDescription": "Excelente para profesionales, teletrabajo, administración y personas que necesitan rapidez en el día a día.",
+      "badgeBg": "bg-emerald-100 text-emerald-800 border-emerald-200",
+      "badgeText": "Multitarea y Trabajo Fluido",
       "recommendedFor": [
-        "Diseño gráfico (Photoshop, Illustrator, Premiere)",
-        "Edición de video 4K y producción musical",
-        "Videojuegos modernos y modelado en 3D",
-        "Programación avanzada y máquinas virtuales"
+        "Trabajo remoto y llamadas de Meet / Teams sin cortes",
+        "Tener 30 pestañas abiertas mientras escuchas música",
+        "Facturación, software contable, bases de datos y CRM",
+        "Creación de contenido para redes en Canva"
       ],
-      "idealUser": "Creadores de contenido, gamers, ingenieros y usuarios exigentes que no quieren limitaciones."
+      "idealUser": "Profesionales independientes, comerciantes, oficinistas y estudiantes que buscan rapidez y longevidad."
     },
     "condition": "Nuevo",
     "freeShipping": false,
-    "installments": "12 cuotas de $176.658 con 0% interés",
+    "installments": "12 cuotas de $202.492 con 0% interés",
     "seller": "ULTRA GAMER TIENDA OFICIAL",
     "screenSize": "13\"",
     "updatedAt": "2026-11-15T06:32:17.176Z",
-    "precioCOPFormateado": "$ 2.119.900",
-    "priceSyncedAt": "2026-11-15T06:32:17.176Z",
-    "originalPrice": 3299999,
-    "discountPercentage": 36,
+    "precioCOPFormateado": "$ 2.429.900",
+    "priceSyncedAt": "2026-11-26T02:24:02.685Z",
     "affiliateUrl": "https://meli.la/2rKSpvR"
   },
   {
     "id": "MCO66159881",
     "nombre": "MacBook Air de 13 pulgadas: chip M5, CPU de 10 núcleos, GPU de 8 núcleos, Neural Engine de 16 núcleos, 512 GB - Medianoche",
-    "precioCOP": 4924900,
+    "precioCOP": 4732574,
     "enlace": "https://www.mercadolibre.com.co/macbook-air-de-13-pulgadas-chip-m5-cpu-de-10-nucleos-gpu-de-8-nucleos-neural-engine-de-16-nucleos-512-gb-medianoche/p/MCO66159881",
     "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_830444-MLA107336166442_032026-O.jpg",
     "title": "MacBook Air de 13 pulgadas: chip M5, CPU de 10 núcleos, GPU de 8 núcleos, Neural Engine de 16 núcleos, 512 GB - Medianoche",
-    "price": 4924900,
+    "price": 4732574,
     "url": "https://www.mercadolibre.com.co/macbook-air-de-13-pulgadas-chip-m5-cpu-de-10-nucleos-gpu-de-8-nucleos-neural-engine-de-16-nucleos-512-gb-medianoche/p/MCO66159881",
     "imageUrl": "https://http2.mlstatic.com/D_NQ_NP_2X_830444-MLA107336166442_032026-O.jpg",
     "brand": "Apple",
     "processor": {
-      "raw": "Apple M2",
-      "family": "Apple M2",
-      "tierScore": 4,
-      "humanDescription": "Súper fluido, silencioso y con excelente rendimiento para trabajo exigente."
+      "raw": "Apple M5",
+      "family": "Apple M5",
+      "tierScore": 5,
+      "humanDescription": "Última generación de Apple Silicon (M5), velocidad, gráficos integrados avanzados y gran autonomía."
     },
     "ram": {
       "sizeGB": 16,
@@ -639,14 +635,12 @@
     },
     "condition": "Nuevo",
     "freeShipping": false,
-    "installments": "12 cuotas de $410.408 con 0% interés",
+    "installments": "12 cuotas de $394.381 con 0% interés",
     "seller": "TECNO OUTLET TIENDA OFICIAL",
     "screenSize": "13\"",
     "updatedAt": "2026-11-15T06:32:19.909Z",
-    "precioCOPFormateado": "$ 4.924.900",
-    "priceSyncedAt": "2026-11-15T06:32:19.909Z",
-    "originalPrice": 6900000,
-    "discountPercentage": 29,
+    "precioCOPFormateado": "$ 4.732.574",
+    "priceSyncedAt": "2026-11-26T02:24:02.685Z",
     "affiliateUrl": "https://meli.la/1DPcmk9"
   },
   {
@@ -661,10 +655,10 @@
     "imageUrl": "https://http2.mlstatic.com/D_NQ_NP_2X_937866-MLA99482225348_112025-O.jpg",
     "brand": "Lenovo",
     "processor": {
-      "raw": "Apple M2",
-      "family": "Apple M2",
-      "tierScore": 4,
-      "humanDescription": "Súper fluido, silencioso y con excelente rendimiento para trabajo exigente."
+      "raw": "AMD Ryzen 5 7520U",
+      "family": "Ryzen 5",
+      "tierScore": 3,
+      "humanDescription": "Excelente rendimiento para estudiar, programar, trabajar y videollamadas fluidas."
     },
     "ram": {
       "sizeGB": 16,
@@ -678,19 +672,19 @@
       "explanation": "Disco SSD ultraveloz: espacio amplio para miles de fotos, videos y arranque en 8 segundos."
     },
     "tier": {
-      "id": "pro",
-      "label": "Alto Rendimiento / Gaming / Diseño",
-      "icon": "Gamepad2",
-      "shortDescription": "Ideal para personas creativas, diseñadores gráficos, ingenieros o entusiastas de los videojuegos.",
-      "badgeBg": "bg-purple-100 text-purple-800 border-purple-200",
-      "badgeText": "Alto Rendimiento / Gaming",
+      "id": "work",
+      "label": "Multitarea y Trabajo Fluido",
+      "icon": "Briefcase",
+      "shortDescription": "Excelente para profesionales, teletrabajo, administración y personas que necesitan rapidez en el día a día.",
+      "badgeBg": "bg-emerald-100 text-emerald-800 border-emerald-200",
+      "badgeText": "Multitarea y Trabajo Fluido",
       "recommendedFor": [
-        "Diseño gráfico (Photoshop, Illustrator, Premiere)",
-        "Edición de video 4K y producción musical",
-        "Videojuegos modernos y modelado en 3D",
-        "Programación avanzada y máquinas virtuales"
+        "Trabajo remoto y llamadas de Meet / Teams sin cortes",
+        "Tener 30 pestañas abiertas mientras escuchas música",
+        "Facturación, software contable, bases de datos y CRM",
+        "Creación de contenido para redes en Canva"
       ],
-      "idealUser": "Creadores de contenido, gamers, ingenieros y usuarios exigentes que no quieren limitaciones."
+      "idealUser": "Profesionales independientes, comerciantes, oficinistas y estudiantes que buscan rapidez y longevidad."
     },
     "condition": "Nuevo",
     "freeShipping": false,
@@ -699,7 +693,7 @@
     "screenSize": "15.6\"",
     "updatedAt": "2026-11-15T06:33:18.639Z",
     "precioCOPFormateado": "$ 1.925.000",
-    "priceSyncedAt": "2026-11-15T06:33:18.639Z",
+    "priceSyncedAt": "2026-11-26T02:24:02.685Z",
     "originalPrice": 2299000,
     "discountPercentage": 16,
     "affiliateUrl": "https://meli.la/26nUsra"
@@ -707,11 +701,11 @@
   {
     "id": "MCO55719485",
     "nombre": "Portátil Lenovo Thinkpad E14 G7 Amd Ryzen 5 16gb 512gb + Ai Negro",
-    "precioCOP": 4439900,
+    "precioCOP": 4279900,
     "enlace": "https://www.mercadolibre.com.co/portatil-lenovo-thinkpad-e14-g7-amd-ryzen-5-16gb-512gb-ai-negro/p/MCO55719485",
     "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_748676-MLA91773767478_092025-O.jpg",
     "title": "Portátil Lenovo Thinkpad E14 G7 Amd Ryzen 5 16gb 512gb + Ai Negro",
-    "price": 4439900,
+    "price": 4279900,
     "url": "https://www.mercadolibre.com.co/portatil-lenovo-thinkpad-e14-g7-amd-ryzen-5-16gb-512gb-ai-negro/p/MCO55719485",
     "imageUrl": "https://http2.mlstatic.com/D_NQ_NP_2X_748676-MLA91773767478_092025-O.jpg",
     "brand": "Lenovo",
@@ -733,48 +727,48 @@
       "explanation": "Disco SSD ultraveloz: espacio amplio para miles de fotos, videos y arranque en 8 segundos."
     },
     "tier": {
-      "id": "pro",
-      "label": "Alto Rendimiento / Gaming / Diseño",
-      "icon": "Gamepad2",
-      "shortDescription": "Ideal para personas creativas, diseñadores gráficos, ingenieros o entusiastas de los videojuegos.",
-      "badgeBg": "bg-purple-100 text-purple-800 border-purple-200",
-      "badgeText": "Alto Rendimiento / Gaming",
+      "id": "work",
+      "label": "Multitarea y Trabajo Fluido",
+      "icon": "Briefcase",
+      "shortDescription": "Excelente para profesionales, teletrabajo, administración y personas que necesitan rapidez en el día a día.",
+      "badgeBg": "bg-emerald-100 text-emerald-800 border-emerald-200",
+      "badgeText": "Multitarea y Trabajo Fluido",
       "recommendedFor": [
-        "Diseño gráfico (Photoshop, Illustrator, Premiere)",
-        "Edición de video 4K y producción musical",
-        "Videojuegos modernos y modelado en 3D",
-        "Programación avanzada y máquinas virtuales"
+        "Trabajo remoto y llamadas de Meet / Teams sin cortes",
+        "Tener 30 pestañas abiertas mientras escuchas música",
+        "Facturación, software contable, bases de datos y CRM",
+        "Creación de contenido para redes en Canva"
       ],
-      "idealUser": "Creadores de contenido, gamers, ingenieros y usuarios exigentes que no quieren limitaciones."
+      "idealUser": "Profesionales independientes, comerciantes, oficinistas y estudiantes que buscan rapidez y longevidad."
     },
     "condition": "Nuevo",
     "freeShipping": false,
-    "installments": "12 cuotas de $369.992 con 0% interés",
+    "installments": "12 cuotas de $356.658 con 0% interés",
     "seller": "LENOVO TIENDA OFICIAL",
     "screenSize": "16\"",
     "updatedAt": "2026-11-15T06:33:44.586Z",
-    "precioCOPFormateado": "$ 4.439.900",
-    "priceSyncedAt": "2026-11-15T06:33:44.586Z",
+    "precioCOPFormateado": "$ 4.279.900",
+    "priceSyncedAt": "2026-11-26T02:24:02.685Z",
     "originalPrice": 9079900,
-    "discountPercentage": 51,
+    "discountPercentage": 53,
     "affiliateUrl": "https://meli.la/1bqxFT2"
   },
   {
     "id": "MCO79067490",
     "nombre": "Notebook Asus Vivobook 16 de 16\" con Ryzen AI 5, 512 GB SSD y 16 GB RAM Gris",
-    "precioCOP": 2349000,
+    "precioCOP": 2327500,
     "enlace": "https://www.mercadolibre.com.co/notebook-asus-vivobook-16-de-16-con-ryzen-ai-5-512-gb-ssd-y-16-gb-ram-gris/p/MCO79067490",
     "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_751224-MLA117360095705_092026-O.jpg",
     "title": "Notebook Asus Vivobook 16 de 16\" con Ryzen AI 5, 512 GB SSD y 16 GB RAM Gris",
-    "price": 2349000,
+    "price": 2327500,
     "url": "https://www.mercadolibre.com.co/notebook-asus-vivobook-16-de-16-con-ryzen-ai-5-512-gb-ssd-y-16-gb-ram-gris/p/MCO79067490",
     "imageUrl": "https://http2.mlstatic.com/D_NQ_NP_2X_751224-MLA117360095705_092026-O.jpg",
     "brand": "Asus",
     "processor": {
-      "raw": "Intel Core / AMD Fluido",
-      "family": "Core i5",
+      "raw": "AMD Ryzen AI 5",
+      "family": "Ryzen AI 5",
       "tierScore": 3,
-      "humanDescription": "Capacidad adecuada para tareas cotidianas y navegación web fluida."
+      "humanDescription": "Procesador moderno con aceleración de IA ideal para multitarea y productividad fluida."
     },
     "ram": {
       "sizeGB": 16,
@@ -788,30 +782,30 @@
       "explanation": "Disco SSD ultraveloz: espacio amplio para miles de fotos, videos y arranque en 8 segundos."
     },
     "tier": {
-      "id": "pro",
-      "label": "Alto Rendimiento / Gaming / Diseño",
-      "icon": "Gamepad2",
-      "shortDescription": "Ideal para personas creativas, diseñadores gráficos, ingenieros o entusiastas de los videojuegos.",
-      "badgeBg": "bg-purple-100 text-purple-800 border-purple-200",
-      "badgeText": "Alto Rendimiento / Gaming",
+      "id": "work",
+      "label": "Multitarea y Trabajo Fluido",
+      "icon": "Briefcase",
+      "shortDescription": "Excelente para profesionales, teletrabajo, administración y personas que necesitan rapidez en el día a día.",
+      "badgeBg": "bg-emerald-100 text-emerald-800 border-emerald-200",
+      "badgeText": "Multitarea y Trabajo Fluido",
       "recommendedFor": [
-        "Diseño gráfico (Photoshop, Illustrator, Premiere)",
-        "Edición de video 4K y producción musical",
-        "Videojuegos modernos y modelado en 3D",
-        "Programación avanzada y máquinas virtuales"
+        "Trabajo remoto y llamadas de Meet / Teams sin cortes",
+        "Tener 30 pestañas abiertas mientras escuchas música",
+        "Facturación, software contable, bases de datos y CRM",
+        "Creación de contenido para redes en Canva"
       ],
-      "idealUser": "Creadores de contenido, gamers, ingenieros y usuarios exigentes que no quieren limitaciones."
+      "idealUser": "Profesionales independientes, comerciantes, oficinistas y estudiantes que buscan rapidez y longevidad."
     },
     "condition": "Nuevo",
     "freeShipping": false,
-    "installments": "12 cuotas de $195.750 con 0% interés",
+    "installments": "12 cuotas de $193.958 con 0% interés",
     "seller": "ASUS TIENDA OFICIAL",
     "screenSize": "16\"",
     "updatedAt": "2026-11-15T06:33:55.344Z",
-    "precioCOPFormateado": "$ 2.349.000",
-    "priceSyncedAt": "2026-11-15T06:33:55.344Z",
-    "originalPrice": 2999000,
-    "discountPercentage": 22,
+    "precioCOPFormateado": "$ 2.327.500",
+    "priceSyncedAt": "2026-11-26T02:24:02.685Z",
+    "originalPrice": 2450000,
+    "discountPercentage": 5,
     "affiliateUrl": "https://meli.la/2vD7U9n"
   }
 ]

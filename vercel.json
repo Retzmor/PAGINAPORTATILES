@@ -1,0 +1,19 @@
+{
+  "crons": [
+    {
+      "path": "/api/prices",
+      "schedule": "0 11 * * *"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/api/prices",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, s-maxage=43200, stale-while-revalidate=3600"
+        }
+      ]
+    }
+  ]
+}

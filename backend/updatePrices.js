@@ -210,10 +210,17 @@ export function extractPricingFromHtml(html) {
     : undefined;
   const discountPercentage = rawDiscount && rawDiscount > 0 ? rawDiscount : undefined;
 
+  const buyboxShippingText = $('.ui-pdp-media__title, .ui-pdp-color--GREEN, #shipping_summary').text().replace(/\s+/g, ' ').trim();
+  const freeShipping = buyboxShippingText ? /env[ií]o\s+gratis|llega\s+gratis/i.test(buyboxShippingText) : undefined;
+  const rawInstallments = $('.ui-pdp-price__subtitles').first().text().replace(/\s+/g, ' ').trim();
+  const installments = rawInstallments && rawInstallments.length > 0 && rawInstallments.length <= 90 ? rawInstallments : undefined;
+
   return {
     price,
     originalPrice: validOriginal,
     discountPercentage,
+    freeShipping,
+    installments,
     source,
     blockedByAntiBot: false
   };
@@ -274,7 +281,9 @@ async function fetchPermalinkHtmlPricing(permalink, browserHeaders) {
       pricing: {
         price: parsed.price,
         originalPrice: parsed.originalPrice,
-        discountPercentage: parsed.discountPercentage
+        discountPercentage: parsed.discountPercentage,
+        freeShipping: parsed.freeShipping,
+        installments: parsed.installments
       }
     };
   } catch (error) {
@@ -507,7 +516,9 @@ async function fetchPermalinkPlaywrightPricing(context, permalink, state) {
       pricing: {
         price: parsed.price,
         originalPrice: parsed.originalPrice,
-        discountPercentage: parsed.discountPercentage
+        discountPercentage: parsed.discountPercentage,
+        freeShipping: parsed.freeShipping,
+        installments: parsed.installments
       }
     };
   } catch (error) {
@@ -675,17 +686,26 @@ export async function updateCatalogPrices() {
       }
 
       updatedCount++;
-      const { price, originalPrice, discountPercentage } = result.pricing;
+      const { price, originalPrice, discountPercentage, freeShipping, installments } = result.pricing;
 
-      // Preserve images, titles, specs, and links; update only price fields and sync timestamps
+      // Update ONLY pricing, shipping, installments and sync timestamp;
+      // explicitly preserve affiliateUrl, tier, processor and core specs untouched.
       const nextItem = {
         ...laptop,
         price,
         precioCOP: price,
         precioCOPFormateado: formatCopNoDecimals(price),
-        updatedAt: syncedAt,
-        priceSyncedAt: syncedAt
+        freeShipping: typeof freeShipping === 'boolean' ? freeShipping : laptop.freeShipping,
+        installments: installments || laptop.installments,
+        priceSyncedAt: syncedAt,
+        affiliateUrl: laptop.affiliateUrl,
+        tier: laptop.tier,
+        processor: laptop.processor
       };
+
+      if (nextItem.affiliateUrl === undefined) {
+        delete nextItem.affiliateUrl;
+      }
 
       if (originalPrice !== undefined && discountPercentage !== undefined) {
         nextItem.originalPrice = originalPrice;

@@ -351,9 +351,13 @@ async function scrapeOfficialProductPage(context, candidate, authState) {
       toCleanPermalink(canonicalHref || page.url()) || candidate.permalink;
     const finalId = extractIdFromPermalink(cleanPermalink) || candidate.id;
 
-    // Semantic extraction combining title + technical spec table
+    // Semantic extraction combining title first (more reliable) and technical spec table
     const brand = extractBrand(title, specsText);
-    const processor = extractProcessor(combinedText);
+    const titleProcessor = extractProcessor(title);
+    const processor =
+      titleProcessor.raw === 'Intel Core / AMD Fluido'
+        ? extractProcessor(combinedText)
+        : titleProcessor;
     const ram = extractRam(combinedText);
     const storage = extractStorage(combinedText);
     const tier = classifyTier(ram.sizeGB, processor.family, combinedText);

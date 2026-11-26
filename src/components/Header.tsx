@@ -9,6 +9,7 @@ interface HeaderProps {
   searchQuery: string;
   onSearchChange: (query: string) => void;
   onResetAll?: () => void;
+  onSelectOfficialStores?: () => void;
 }
 
 export const Header: React.FC<HeaderProps> = ({
@@ -17,7 +18,8 @@ export const Header: React.FC<HeaderProps> = ({
   onOpenGuide,
   searchQuery,
   onSearchChange,
-  onResetAll
+  onResetAll,
+  onSelectOfficialStores
 }) => {
   return (
     <header className="sticky top-0 z-40 w-full bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)] border-b border-outline-variant/30">
@@ -119,12 +121,16 @@ export const Header: React.FC<HeaderProps> = ({
             >
               Portátiles
             </a>
-            <a
-              href="#catalogo"
+            <button
+              type="button"
+              onClick={() => {
+                onSelectOfficialStores?.();
+                document.getElementById('catalogo')?.scrollIntoView({ behavior: 'smooth' });
+              }}
               className="text-xs font-semibold text-on-surface-variant hover:text-on-surface py-2.5 shrink-0 transition-colors"
             >
               Tiendas Oficiales
-            </a>
+            </button>
             <button
               type="button"
               onClick={onOpenGuide}

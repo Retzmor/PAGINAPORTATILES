@@ -48,24 +48,15 @@ export function extractBrand(title, rawAttributes = '') {
 }
 
 /**
- * Semantic extraction of Processor using regex
+ * Semantic extraction of Processor using regex.
+ * Evaluates Intel Core and AMD Ryzen (including Ryzen AI) before Apple Silicon,
+ * and requires Apple/MacBook/Chip context for M2 so "SSD M.2" is never misclassified.
  */
 export function extractProcessor(text) {
   const clean = text.toLowerCase();
 
-  // Apple Silicon
-  if (/\bm3\s*max\b/i.test(clean)) return { raw: 'Apple M3 Max', family: 'Apple M3', tierScore: 5, humanDescription: 'Potencia profesional extrema de última generación Apple.' };
-  if (/\bm3\s*pro\b/i.test(clean)) return { raw: 'Apple M3 Pro', family: 'Apple M3', tierScore: 5, humanDescription: 'Rendimiento superior para diseño, edición de video y render 3D.' };
-  if (/\bm3\b/i.test(clean)) return { raw: 'Apple M3', family: 'Apple M3', tierScore: 4, humanDescription: 'Muy veloz y con batería de hasta 18 horas para todo tipo de uso.' };
-  if (/\bm2\s*pro\b/i.test(clean)) return { raw: 'Apple M2 Pro', family: 'Apple M2', tierScore: 5, humanDescription: 'Potente para trabajo creativo profesional y desarrollo.' };
-  // Apple Silicon M4 / M3 / M2 / M1
-  if (/\bm4\b/i.test(clean)) return { raw: 'Apple M4', family: 'Apple M3', tierScore: 5, humanDescription: 'Última generación de Apple Silicon, ultrarrápido y silencioso.' };
-  if (/\bm3\b/i.test(clean)) return { raw: 'Apple M3', family: 'Apple M3', tierScore: 5, humanDescription: 'Última generación Apple, potencia excepcional para edición y multitarea.' };
-  if (/\bm2\b/i.test(clean)) return { raw: 'Apple M2', family: 'Apple M2', tierScore: 4, humanDescription: 'Súper fluido, silencioso y con excelente rendimiento para trabajo exigente.' };
-  if (/\bm1\b/i.test(clean)) return { raw: 'Apple M1', family: 'Apple M1', tierScore: 4, humanDescription: 'Excelente rendimiento y eficiencia energética para el día a día y trabajo.' };
-
-  // Intel Core i9
-  if (/core\s*i9|corei9|i9[\s-]?\d{4,5}/i.test(clean)) {
+  // 1. Intel Core (i9 / Ultra 9 -> i7 / Core 7 -> i5 / Core 5 -> i3 / Core 3 -> Celeron / Pentium)
+  if (/core\s*(?:ultra\s*)?i?9\b|corei9|i9[\s-]?\d{4,5}/i.test(clean)) {
     const match = clean.match(/i9[\s-]?(\d{4,5}[a-z]{0,2}\d?)/i);
     return {
       raw: match ? `Intel Core i9-${match[1].toUpperCase()}` : 'Intel Core i9',
@@ -75,8 +66,7 @@ export function extractProcessor(text) {
     };
   }
 
-  // Intel Core i7
-  if (/core\s*i7|corei7|i7[\s-]?\d{4,5}/i.test(clean)) {
+  if (/core\s*i7|corei7|core\s*(?:ultra\s*)?7\b|i7[\s-]?\d{4,5}/i.test(clean)) {
     const match = clean.match(/i7[\s-]?(\d{4,5}[a-z]{0,2}\d?)/i);
     return {
       raw: match ? `Intel Core i7-${match[1].toUpperCase()}` : 'Intel Core i7',
@@ -86,8 +76,7 @@ export function extractProcessor(text) {
     };
   }
 
-  // Intel Core i5
-  if (/core\s*i5|corei5|i5[\s-]?\d{4,5}/i.test(clean)) {
+  if (/core\s*i5|corei5|core\s*(?:ultra\s*)?5\b|i5[\s-]?\d{4,5}/i.test(clean)) {
     const match = clean.match(/i5[\s-]?(\d{4,5}[a-z]{0,2}\d?)/i);
     return {
       raw: match ? `Intel Core i5-${match[1].toUpperCase()}` : 'Intel Core i5',
@@ -97,18 +86,127 @@ export function extractProcessor(text) {
     };
   }
 
-  // Intel Core i3 / Core 3
   if (/core\s*i3|corei3|core\s*3\b|i3[\s-]?\d{4,5}/i.test(clean)) {
-    const match = clean.match(/i3[\s-]?(\d{4,5}[a-z]{0,2}\d?)/i);
+    const match = clean.match(/(?:i3[\s-]?(\d{4,5}[a-z]{0,2}\d?)|core\s*3\s*(n\d{3,4}))/i);
+    const modelCode = match?.[1] || match?.[2];
     return {
-      raw: match ? `Intel Core i3-${match[1].toUpperCase()}` : 'Intel Core i3',
+      raw: modelCode
+        ? (/core\s*3\b/i.test(clean) && !/i3/i.test(clean)
+            ? `Intel Core 3 ${modelCode.toUpperCase()}`
+            : `Intel Core i3-${modelCode.toUpperCase()}`)
+        : 'Intel Core i3',
       family: 'Core i3',
       tierScore: 2,
       humanDescription: 'Muy bueno para estudiar, navegar con muchas páginas, ver series y hacer trabajos de oficina.'
     };
   }
 
-  // Intel Celeron / Pentium
+  // 2. AMD Ryzen (including Ryzen AI 9 / 7 / 5 / 3)
+  if (/ryzen\s*ai\s*9\b|ryzen\s*9|r9[\s-]?\d{4}/i.test(clean)) {
+    const isAi = /ryzen\s*ai\s*9/i.test(clean);
+    const match = clean.match(/ryzen\s*(?:ai\s*)?9[\s-]?(\d{3,4}[a-z]{0,2})/i);
+    return {
+      raw: match ? `AMD Ryzen ${isAi ? 'AI ' : ''}9 ${match[1].toUpperCase()}` : `AMD Ryzen ${isAi ? 'AI ' : ''}9`,
+      family: 'Ryzen 9',
+      tierScore: 5,
+      humanDescription: 'Procesador tope de gama AMD, máxima fluidez en tareas pesadas simultáneas.'
+    };
+  }
+
+  if (/ryzen\s*ai\s*7\b|ryzen\s*7|r7[\s-]?\d{4}/i.test(clean)) {
+    const isAi = /ryzen\s*ai\s*7/i.test(clean);
+    const match = clean.match(/ryzen\s*(?:ai\s*)?7[\s-]?(\d{3,4}[a-z]{0,2})/i);
+    return {
+      raw: match ? `AMD Ryzen ${isAi ? 'AI ' : ''}7 ${match[1].toUpperCase()}` : `AMD Ryzen ${isAi ? 'AI ' : ''}7`,
+      family: 'Ryzen 7',
+      tierScore: 4,
+      humanDescription: 'Muy veloz y potente con múltiples núcleos, perfecto para creadores y multitarea pesada.'
+    };
+  }
+
+  if (/ryzen\s*ai\s*5\b/i.test(clean)) {
+    const match = clean.match(/ryzen\s*ai\s*5[\s-]?(\d{3,4}[a-z]{0,2})/i);
+    return {
+      raw: match ? `AMD Ryzen AI 5 ${match[1].toUpperCase()}` : 'AMD Ryzen AI 5',
+      family: 'Ryzen AI 5',
+      tierScore: 3,
+      humanDescription: 'Procesador moderno con aceleración de IA ideal para multitarea y productividad fluida.'
+    };
+  }
+
+  if (/ryzen\s*5|r5[\s-]?\d{4}/i.test(clean)) {
+    const match = clean.match(/ryzen\s*5[\s-]?(\d{3,4}[a-z]{0,2})/i);
+    return {
+      raw: match ? `AMD Ryzen 5 ${match[1].toUpperCase()}` : 'AMD Ryzen 5',
+      family: 'Ryzen 5',
+      tierScore: 3,
+      humanDescription: 'Excelente rendimiento para estudiar, programar, trabajar y videollamadas fluidas.'
+    };
+  }
+
+  if (/ryzen\s*ai\s*3\b|ryzen\s*3|r3[\s-]?\d{4}/i.test(clean)) {
+    const match = clean.match(/ryzen\s*(?:ai\s*)?3[\s-]?(\d{3,4}[a-z]{0,2})/i);
+    return {
+      raw: match ? `AMD Ryzen 3 ${match[1].toUpperCase()}` : 'AMD Ryzen 3',
+      family: 'Ryzen 3',
+      tierScore: 2,
+      humanDescription: 'Ágil y confiable para labores diarias del colegio, universidad o trabajo administrativo.'
+    };
+  }
+
+  // 3. Apple Silicon (M5 -> M4 -> M3 -> M2 strictly with Apple/MacBook/Chip context -> M1)
+  if (/\b(?:apple|macbook|mac\s*book|chip)\b[^|]*\bm5\b|\bm5\b[^|]{0,35}\b(?:apple|macbook|núcleos|nucleos|gpu)\b/i.test(clean)) {
+    return {
+      raw: 'Apple M5',
+      family: 'Apple M5',
+      tierScore: 5,
+      humanDescription: 'Última generación de Apple Silicon (M5), velocidad, gráficos integrados avanzados y gran autonomía.'
+    };
+  }
+
+  if (/\b(?:apple|macbook|mac\s*book|chip)\b[^|]*\bm4\b|\bm4\b[^|]{0,35}\b(?:apple|macbook|núcleos|nucleos|gpu)\b/i.test(clean)) {
+    return {
+      raw: 'Apple M4',
+      family: 'Apple M4',
+      tierScore: 5,
+      humanDescription: 'Generación avanzada de Apple Silicon, ultrarrápido y silencioso para trabajo creativo.'
+    };
+  }
+
+  if (/\bm3\s*max\b/i.test(clean)) return { raw: 'Apple M3 Max', family: 'Apple M3', tierScore: 5, humanDescription: 'Potencia profesional extrema de última generación Apple.' };
+  if (/\bm3\s*pro\b/i.test(clean)) return { raw: 'Apple M3 Pro', family: 'Apple M3', tierScore: 5, humanDescription: 'Rendimiento superior para diseño, edición de video y render 3D.' };
+  if (/\b(?:apple|macbook|mac\s*book|chip)\b[^|]*\bm3\b|\bm3\b[^|]{0,35}\b(?:apple|macbook|pro|max)\b/i.test(clean)) {
+    return { raw: 'Apple M3', family: 'Apple M3', tierScore: 4, humanDescription: 'Muy veloz y con batería de hasta 18 horas para todo tipo de uso.' };
+  }
+
+  if (/\bm2\s*pro\b/i.test(clean)) {
+    return { raw: 'Apple M2 Pro', family: 'Apple M2', tierScore: 5, humanDescription: 'Potente para trabajo creativo profesional y desarrollo.' };
+  }
+
+  // M2 requires explicit Apple / MacBook / Chip M2 context so "SSD M.2" never triggers Apple M2
+  if (
+    /\b(?:apple|macbook|mac\s*book)\b[^|\n]{0,60}\bm2\b/i.test(clean) ||
+    /\bchip\s+m2\b/i.test(clean) ||
+    /\bm2\b[^|\n]{0,40}\b(?:apple|macbook|mac\s*book)\b/i.test(clean)
+  ) {
+    return {
+      raw: 'Apple M2',
+      family: 'Apple M2',
+      tierScore: 4,
+      humanDescription: 'Súper fluido, silencioso y con excelente rendimiento para trabajo exigente.'
+    };
+  }
+
+  if (/\b(?:apple|macbook|mac\s*book|chip)\b[^|\n]{0,50}\bm1\b/i.test(clean)) {
+    return {
+      raw: 'Apple M1',
+      family: 'Apple M1',
+      tierScore: 4,
+      humanDescription: 'Excelente rendimiento y eficiencia energética para el día a día y trabajo.'
+    };
+  }
+
+  // 4. Entry-level Intel Celeron / Pentium / AMD Athlon
   if (/\b(celeron|pentium)\b/i.test(clean)) {
     return {
       raw: 'Intel Celeron N4020 / N4500',
@@ -118,50 +216,6 @@ export function extractProcessor(text) {
     };
   }
 
-  // AMD Ryzen 9
-  if (/ryzen\s*9|r9[\s-]?\d{4}/i.test(clean)) {
-    return {
-      raw: 'AMD Ryzen 9',
-      family: 'Ryzen 9',
-      tierScore: 5,
-      humanDescription: 'Procesador tope de gama AMD, máxima fluidez en tareas pesadas simultáneas.'
-    };
-  }
-
-  // AMD Ryzen 7
-  if (/ryzen\s*7|r7[\s-]?\d{4}/i.test(clean)) {
-    const match = clean.match(/ryzen\s*7[\s-]?(\d{4}[a-z]{0,2})/i);
-    return {
-      raw: match ? `AMD Ryzen 7 ${match[1]}` : 'AMD Ryzen 7',
-      family: 'Ryzen 7',
-      tierScore: 4,
-      humanDescription: 'Muy veloz y potente con múltiples núcleos, perfecto para creadores y multitarea pesada.'
-    };
-  }
-
-  // AMD Ryzen 5
-  if (/ryzen\s*5|r5[\s-]?\d{4}/i.test(clean)) {
-    const match = clean.match(/ryzen\s*5[\s-]?(\d{4}[a-z]{0,2})/i);
-    return {
-      raw: match ? `AMD Ryzen 5 ${match[1]}` : 'AMD Ryzen 5',
-      family: 'Ryzen 5',
-      tierScore: 3,
-      humanDescription: 'Excelente rendimiento para estudiar, programar, trabajar y videollamadas fluidas.'
-    };
-  }
-
-  // AMD Ryzen 3
-  if (/ryzen\s*3|r3[\s-]?\d{4}/i.test(clean)) {
-    const match = clean.match(/ryzen\s*3[\s-]?(\d{4}[a-z]{0,2})/i);
-    return {
-      raw: match ? `AMD Ryzen 3 ${match[1]}` : 'AMD Ryzen 3',
-      family: 'Ryzen 3',
-      tierScore: 2,
-      humanDescription: 'Ágil y confiable para labores diarias del colegio, universidad o trabajo administrativo.'
-    };
-  }
-
-  // AMD Athlon
   if (/\bathlon\b/i.test(clean)) {
     return {
       raw: 'AMD Athlon Silver',
@@ -267,15 +321,26 @@ export function extractStorage(text) {
 }
 
 /**
- * Classifies into 3 friendly human tiers
+ * Classifies into 3 friendly human tiers without over-assigning 16GB+ productivity laptops to 'pro'
  */
 export function classifyTier(ramSizeGB, processorFamily, text = '') {
   const clean = text.toLowerCase();
-  const isDedicatedGPU = /\b(rtx|gtx|geforce|radeon\s*rx|arc|gaming|gamer)\b/i.test(clean);
-  const isHighCore = ['Core i7', 'Core i9', 'Ryzen 7', 'Ryzen 9', 'Apple M3 Pro', 'Apple M3 Max', 'Apple M2 Pro', 'Apple M3'].includes(processorFamily);
+  const isDedicatedGPU = /\b(rtx|gtx|geforce|radeon\s*rx|intel\s*arc|gaming|gamer)\b/i.test(clean);
+  const isHighCore = [
+    'Core i7',
+    'Core i9',
+    'Ryzen 7',
+    'Ryzen 9',
+    'Apple M3',
+    'Apple M3 Pro',
+    'Apple M3 Max',
+    'Apple M2 Pro',
+    'Apple M4',
+    'Apple M5'
+  ].includes(processorFamily);
 
-  // 1. Pro / Gaming / Creative Tier
-  if (ramSizeGB >= 16 || isDedicatedGPU || isHighCore) {
+  // 1. Pro / Gaming / Alto Rendimiento (dedicated GPU, high-end CPU, or Apple M3/M4/M5)
+  if (isDedicatedGPU || isHighCore) {
     return {
       id: 'pro',
       label: 'Alto Rendimiento / Gaming / Diseño',
@@ -293,8 +358,30 @@ export function classifyTier(ramSizeGB, processorFamily, text = '') {
     };
   }
 
-  // 2. Basic Tier
-  if (ramSizeGB <= 8 && ['Celeron / Pentium', 'AMD Athlon', 'Core i3', 'Ryzen 3'].includes(processorFamily)) {
+  // 2. Work / Multitarea y Trabajo (16GB+ RAM with Core i5 / Ryzen 5 / Ryzen AI 5 and no dedicated GPU)
+  if (
+    ramSizeGB >= 16 &&
+    ['Core i5', 'Ryzen 5', 'Ryzen AI 5', 'Apple M1', 'Apple M2'].includes(processorFamily)
+  ) {
+    return {
+      id: 'work',
+      label: 'Multitarea y Trabajo Fluido',
+      icon: 'Briefcase',
+      shortDescription: 'Excelente para profesionales, teletrabajo, administración y personas que necesitan rapidez en el día a día.',
+      badgeBg: 'bg-emerald-100 text-emerald-800 border-emerald-200',
+      badgeText: 'Multitarea y Trabajo Fluido',
+      recommendedFor: [
+        'Trabajo remoto y llamadas de Meet / Teams sin cortes',
+        'Tener 30 pestañas abiertas mientras escuchas música',
+        'Facturación, software contable, bases de datos y CRM',
+        'Creación de contenido para redes en Canva'
+      ],
+      idealUser: 'Profesionales independientes, comerciantes, oficinistas y estudiantes que buscan rapidez y longevidad.'
+    };
+  }
+
+  // 3. Basic / Estudio y Oficina (8GB RAM, Core i3, Core 3, Ryzen 3, Celeron, Athlon)
+  if (ramSizeGB <= 8 || ['Celeron / Pentium', 'AMD Athlon', 'Core i3', 'Ryzen 3'].includes(processorFamily)) {
     return {
       id: 'basic',
       label: 'Estudio y Oficina Básica',
@@ -312,7 +399,7 @@ export function classifyTier(ramSizeGB, processorFamily, text = '') {
     };
   }
 
-  // 3. Work / Multitask Tier
+  // Fallback Work / Multitask Tier
   return {
     id: 'work',
     label: 'Multitarea y Trabajo Fluido',

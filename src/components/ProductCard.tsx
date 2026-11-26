@@ -187,7 +187,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
         <a
           href={laptop.affiliateUrl || laptop.permalink || laptop.enlace || laptop.url}
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noopener noreferrer sponsored"
           className="w-full h-11 rounded-lg bg-primary-container hover:bg-primary text-on-primary text-xs font-bold flex items-center justify-center gap-2 transition-all shadow-sm hover:shadow active:scale-[0.99] mt-1"
         >
           <span>Ver oferta en Mercado Libre</span>

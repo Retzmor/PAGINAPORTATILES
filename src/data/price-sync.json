@@ -1,12 +1,28 @@
 {
-  "lastSyncedAt": "2026-11-15T06:34:09.406Z",
-  "mode": "playwright-official-stores",
-  "updatedCount": 15,
-  "failedCount": 0,
+  "lastSyncedAt": "2026-11-26T02:24:02.685Z",
+  "mode": "playwright-persistent",
+  "updatedCount": 14,
+  "failedCount": 1,
   "antiBotBlockedCount": 0,
   "totalCount": 15,
   "authTokenConfigured": false,
-  "notFoundIds": [],
-  "failures": [],
-  "sampleFailures": []
+  "notFoundIds": [
+    "MCOU5731713092"
+  ],
+  "failures": [
+    {
+      "id": "MCOU5731713092",
+      "permalink": "https://www.mercadolibre.com.co/portatil-gamer-acer-nitro-v-16-ai-ryzen-5-240--rtx-5050/up/MCOU5731713092",
+      "status": 200,
+      "error": "No se detectó precio en el navegador (not-found)"
+    }
+  ],
+  "sampleFailures": [
+    {
+      "id": "MCOU5731713092",
+      "permalink": "https://www.mercadolibre.com.co/portatil-gamer-acer-nitro-v-16-ai-ryzen-5-240--rtx-5050/up/MCOU5731713092",
+      "status": 200,
+      "error": "No se detectó precio en el navegador (not-found)"
+    }
+  ]
 }

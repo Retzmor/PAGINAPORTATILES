@@ -8,6 +8,7 @@ interface FilterBarProps {
   onResetFilters: () => void;
   availableBrands: string[];
   totalResults: number;
+  totalCatalogCount: number;
 }
 
 export const FilterBar: React.FC<FilterBarProps> = ({
@@ -15,7 +16,7 @@ export const FilterBar: React.FC<FilterBarProps> = ({
   onFilterChange,
   onResetFilters,
   availableBrands,
-  totalResults
+  totalCatalogCount
 }) => {
   const toggleBrand = (brand: string) => {
     const current = [...filters.brands];
@@ -33,20 +34,21 @@ export const FilterBar: React.FC<FilterBarProps> = ({
     filters.budgetRange !== 'all' ||
     filters.brands.length > 0 ||
     filters.onlyFreeShipping ||
+    filters.onlyOfficialStores ||
     filters.minRam > 0 ||
     filters.searchQuery !== '';
 
   const budgetOptions: Array<{ value: FilterState['budgetRange']; label: string }> = [
     { value: 'all', label: 'Todos' },
-    { value: 'under-1.5m', label: 'Menos de $1.5M' },
-    { value: '1.5m-2.5m', label: '$1.5M - $2.5M' },
-    { value: 'over-2.5m', label: 'Más de $2.5M' }
+    { value: 'under-2m', label: 'Menos de $2.0M' },
+    { value: '2m-3.2m', label: '$2.0M - $3.2M' },
+    { value: 'over-3.2m', label: 'Más de $3.2M' }
   ];
 
   return (
     <section
       id="catalogo"
-      className="w-full bg-surface-container-lowest rounded-xl border border-outline-variant/40 shadow-sm mb-6"
+      className="scroll-mt-32 w-full bg-surface-container-lowest rounded-xl border border-outline-variant/40 shadow-sm mb-6"
     >
       <div className="px-4 sm:px-5 py-3.5 flex flex-col gap-3">
         {/* Top Row: Budget Chips + Sort */}
@@ -100,7 +102,7 @@ export const FilterBar: React.FC<FilterBarProps> = ({
           </div>
         </div>
 
-        {/* Second Row: Brand Pills + Quick Toggles */}
+        {/* Second Row: Brand Pills + Interactive Quick Toggles */}
         <div className="flex flex-wrap items-center justify-between gap-3 pt-2 border-t border-outline-variant/20">
           {/* Brands */}
           <div className="flex items-center gap-1.5 overflow-x-auto pb-1 sm:pb-0 scrollbar-none">
@@ -116,7 +118,7 @@ export const FilterBar: React.FC<FilterBarProps> = ({
                   : 'bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-medium'
               }`}
             >
-              Todas ({totalResults})
+              Todas ({totalCatalogCount})
             </button>
             {availableBrands.map((brand) => {
               const isSelected = filters.brands.includes(brand);
@@ -137,19 +139,30 @@ export const FilterBar: React.FC<FilterBarProps> = ({
             })}
           </div>
 
-          {/* Quick Toggles & Reset */}
+          {/* Interactive Quick Toggles & Reset */}
           <div className="flex items-center gap-2 flex-wrap">
-            <span className="px-2.5 py-1 rounded-lg bg-secondary-fixed/40 text-secondary text-[11px] font-semibold flex items-center gap-1">
+            <button
+              type="button"
+              onClick={() => onFilterChange({ onlyOfficialStores: !filters.onlyOfficialStores })}
+              aria-pressed={filters.onlyOfficialStores}
+              className={`px-2.5 py-1 rounded-lg text-[11px] font-semibold flex items-center gap-1 transition-all ${
+                filters.onlyOfficialStores
+                  ? 'bg-secondary text-on-secondary shadow-xs'
+                  : 'bg-secondary-fixed/40 text-secondary hover:bg-secondary-fixed/70'
+              }`}
+              title="Filtrar solo publicaciones verificadas con sello Tienda Oficial"
+            >
               <BadgeCheck className="w-3.5 h-3.5" />
-              <span>Tiendas Oficiales</span>
-            </span>
+              <span>Solo Tiendas Oficiales</span>
+            </button>
 
             <button
               type="button"
               onClick={() => onFilterChange({ onlyFreeShipping: !filters.onlyFreeShipping })}
+              aria-pressed={filters.onlyFreeShipping}
               className={`px-2.5 py-1 rounded-lg text-[11px] font-semibold flex items-center gap-1 transition-all ${
                 filters.onlyFreeShipping
-                  ? 'bg-secondary text-on-secondary shadow-xs'
+                  ? 'bg-primary-container text-on-primary shadow-xs'
                   : 'bg-surface-container-low text-on-surface-variant hover:bg-surface-container'
               }`}
             >
